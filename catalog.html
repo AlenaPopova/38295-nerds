@@ -11,14 +11,14 @@
 				<img src="logo.svg" alt="Логотип Нёрдс">
 			</a>
 			<ul class="site-navigation">
-				<li><a href="studio.html">Студия</a></li>
-				<li><a href="clients.html">Клиенты</a></li>
-				<li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
-			<ul class="cart-navigation">
-				<li><a href="cart.html"></a>Корзина</li>
-			</ul>
+			<div class="cart-navigation">
+				<a href="cart.html">Корзина</a>
+			</div>
 		</nav>
 	</header>
 	<main class="container">
@@ -27,26 +27,30 @@
 		<section class="filters-price">
 			<h2 class="visially-hidden">Фильтр</h2> 
 
-			<h4>СТОИМОСТЬ</h4>
+			<h4>Стоимость</h4>
 			<!-- тут будет форма-->
 		</section>
 
 		<section class="filter-grid">
-			<h4>СЕТКА</h4>
+			<h4>Сетка</h4>
 			<!-- тут будет форма-->
 		</section>
 
 		<section>
-			<h4>ОСОБЕННОСТИ</h4>
+			<h4>Ососбенности</h4>
 			<!-- тут будет форма-->
 			<p><button>Показать</button></p>
 		</section>
 
 		<section class="sorting">
-			<ul>
+			<ul class="sorting-parameter">
 				<li class="sorting-active"><a> По цене </a></li>
 				<li class="sorting-active"> <a href="#"> По типу </a> </li>
 				<li class="sorting-active"> <a href="#"> По названию</li>
+			</ul>
+			<ul class="sorting-low-to-high">
+				<li class="sorting-active"><a>По убыванию</a></li>
+				<li class="sorting-active"><a href="#">По возрастанию</a></li>
 			</ul>
 		</section>
 
@@ -65,7 +69,7 @@
 					</p>
 					<p>
 						<a class="button" href="#">
-						<b>9900 РУБ.</b></a>
+						<div>9900 РУБ.</div></a>
 					</p>
 				</li>
 
@@ -137,18 +141,19 @@
 		</section>
 
 		<section class="map">
+			<h2 class="visially-hidden">Наш адрес</h2><!--в последствии необходимо скрыть -->
 			<!-- Здесь должна быть карта-->
-			<p><b>NERDS DESIGN STUDIO</b><br>
+			<p>Nerds disign studio<br>
 				191186, Санкт-Петербург, <br>
 				ул. Конюшенная, д. 19/8</p>
 			<p>тел. +7(812)275-75-75</p>
-			<a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
+			<a class="button" href="contacts.html">Напишите нам</a>
 		</section>
 	</main>
 
 		<footer class="main-footer">
 		<div class="social-footer">
-			<b>Давайте дружить, это выгодно!</b><br>
+			<h2>Давайте дружить, это выгодно!</h2> <!--это можно сделать заголовком? -->
 			<span>Скидка 10% для друзей из социальный сетей.</span> <!--во что обернуть это предложение? -->
 			<ul>
 				<li><a class="social-button" href="#">ВКонтакте</a></li>
@@ -159,13 +164,10 @@
 	</footer>
 
 	<section>
-		<h1>Напишите нам</h1>
+		<h1>Напишите нам</h1> <!-- Реализуется с помощью формы-->
 		<p>Ваше имя</p>
-		<!-- Здесь будет форма-->
 		<p>Ваш e-mail</p>
-		<!-- Здесь будет форма-->
 		<p>Текст письма</p>
-		<!-- Здесь будет форма-->
 		<span class="modal-close">X</span><br> <!-- кнопка закрытия формы-->
 		<button>Отправить</button>
 	</section>
