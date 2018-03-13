@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог услуг Nёrd's</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -93,9 +96,9 @@
 
 		<section class="sorting">
 			<ul class="sorting-list">
-				<li class="sorting-link"><a> По цене </a></li>
-				<li class="sorting-link"> <a href="#"> По типу </a> </li>
-				<li class="sorting-link"> <a href="#"> По названию</li>
+				<li class="sorting-link"><a class="button"> По цене </a></li>
+				<li class="sorting-link"><a class="button" href="#">По типу</a></li>
+				<li class="sorting-link"><a class="button" href="#">По названию</a></li>
 			</ul>
 			<ul class="sorting-list">
 				<li class="sorting-link"><a>По убыванию</a></li>
@@ -248,7 +251,7 @@
 				<label for="user-letter">Текст письма:</label>
 				<textarea id="user-letter" name="your-letter" rows="5" cols="50" placeholder="В свободной форме"></textarea>
 			</p>
-			<button class="button" type="submit" value="Отправить">Отправить</button>
+			<button class="send-letter" type="submit" value="Отправить">Отправить</button>
 		</form>
 		<button  class="modal-close" type="button" aria-label="Закрыть форму"> Закрыть
 		</button>
