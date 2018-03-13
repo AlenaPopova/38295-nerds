@@ -1,0 +1,264 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+}
+
+header {
+	background-color: #eeeeee;
+}
+
+/*Общие свойства*/
+a {
+	text-decoration:none;		
+}
+
+.button {
+	font: inherit;
+	text-transform: uppercase;	
+}
+
+.button.rose {
+	text-align: center;
+	color: white;
+	background-color: #fb565a;
+	vertical-align: middle;
+	
+}
+
+.button.rose:hover,
+.button.rose:focus{
+	color:#e74246;
+}
+
+.button.rose:active {
+	color:#d7373b;
+}
+
+.button.green {
+	text-align: center;
+	color: white;
+	background-color: #00ca74;
+	vertical-align: middle;
+}
+
+.button.green:hover,
+.button.green:focus{
+	color:#00bc6c;
+}
+
+.button.green:active {
+	color:#00aa62;
+}
+
+.button.yellow {
+	text-align: center;
+	color: white;
+	background-color: #efc84a;
+	vertical-align: middle;
+}
+
+.button.yellow:hover,
+.button.yellow:focus{
+	color:#eab534;
+}
+
+.button.yellow:active {
+	color:#e5a722;
+}
+
+/*Панель навигации*/
+.main-navigation {
+	color: black;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.site-navigation { 						
+	list-style: none;
+}
+
+.site-navigation a,
+.cart-navigation a {
+	color: black;
+}
+
+.site-navigation a:hover,
+.cart-navigation a:hover,
+.site-navigation a:focus,
+.cart-navigation a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart-navigation a:active {
+	color: #a6a6a6;
+}	
+
+
+.main-header-logo img:hover,
+.main-header-logo img:focus {
+	 opacity: 0.8;
+}
+
+.main-header-logo img:active {
+	 opacity: 0.3;
+}
+
+/*Шапка и слайды*/
+.know-more {
+	background-color: #eeeeee;
+}
+
+h1.know {
+	font-size: 55px;
+	line-height: 55px;
+}	
+
+.slides-switches { 						
+	list-style: none;
+}
+
+/*Услуги*/
+.services h3 {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.services-list { 						
+	list-style: none;
+}
+
+
+/*О нас*/ 
+p.we-are {					
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.doing-orders {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.statistic-info { 			
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.list-orders {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*Статистика*/
+
+.statictic-percent {
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 10.3px;
+}
+
+.statictic-parameter {
+	line-height: 18px; 
+}
+
+.statistic-list { 						
+	list-style: none;
+}
+
+/*Партнеры*/
+.partners-list {
+	list-style: none;
+}
+
+.partners-list a:hover,
+.partners-list a:focus {
+	color: #cccccc;
+}
+
+.partners-list a:active {
+	color: #e5e5e5;
+}
+
+/*Наш адрес*/
+.name-of-studio {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.adress {
+	line-height:18px;
+	color:#666666;
+}
+
+/*Соц.сети*/
+.partner-item img:hover,
+.partner-item img:focus {
+	 opacity: 0.8;
+}
+
+.partner-item img:active {
+	 opacity: 0.1;
+}
+
+/*Подвал*/
+
+.friend {
+	font-size: 42px
+	line-height: 42px;
+	font-weight:bold;
+	color: black;
+}
+
+.main-footer.discont {
+	line-height: 22px;
+	color: #444444; 
+}
+
+.main-footer ul {
+	list-style: none;
+}
+
+/*Напишите нам*/
+
+label{
+	line-height:18px;
+	font-weight: bold;
+}
+
+.write-us h1 {
+	font-size: 42px
+	line-height: 42px;
+	font-weight:bold;
+	color: black;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form textarea {
+	font:inherit;
+	line-height:18px;
+	color: #444444;
+	border: 2px solid #eeeeee;
+}
+
+.user-form input:hover,
+.user-form textarea:hover {
+	border-color: 2px solid #dfdfdf;
+}
+
+.user-form input:focus 
+.user-form textarea:focus {
+	border-color: 2px solid black;
+}
+
+.user-form input:invalid {
+	border-color: 2px solid red;
+}
+
