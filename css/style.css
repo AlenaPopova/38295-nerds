@@ -38,6 +38,7 @@ a {
 .button.rose:active {
 	background-color:#d7373b;
 	color: #e37376;
+	opacity:0.3;
 }
 
 
@@ -67,15 +68,16 @@ a {
 
 .site-navigation a:active,
 .cart-navigation a:active {
-	color: #a6a6a6;
+	color: black;
+	opacity:0.3;
 }	
 
-.main-header-logo img:hover,
-.main-header-logo img:focus {
+.main-header-logo:hover img,
+.main-header-logo:focus img {
 	 opacity: 0.8;
 }
 
-.main-header-logo img:active {
+.main-header-logo:active img {
 	 opacity: 0.3;
 }
 
