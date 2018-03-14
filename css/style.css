@@ -40,35 +40,6 @@ a {
 	color: #e37376;
 }
 
-.button.green {
-	color: white;
-	background-color: #00ca74;
-}	
-
-.button.green:hover,
-.button.green:focus{
-	background-color::#00bc6c;
-}
-
-.button.green:active {
-	background-color::#00aa62;
-	color: #00aa62;
-}
-
-.button.yellow {
-	color: white;
-	background-color: #efc84a;
-}
-
-.button.yellow:hover,
-.button.yellow:focus{
-	background-color::#eab534;
-}
-
-.button.yellow:active {
-	background-color::#e5a722;
-	color: #edc265;
-}
 
 /*Панель навигации*/
 .main-navigation {
@@ -132,6 +103,36 @@ h1.know {
 
 .services-list { 						
 	list-style: none;
+}
+
+.button.green {
+	color: white;
+	background-color: #00ca74;
+}	
+
+.button.green:hover,
+.button.green:focus{
+	background-color::#00bc6c;
+}
+
+.button.green:active {
+	background-color::#00aa62;
+	color: #0faf6b;
+}
+
+.button.yellow {
+	color: white;
+	background-color: #efc84a;
+}
+
+.button.yellow:hover,
+.button.yellow:focus{
+	background-color::#eab534;
+}
+
+.button.yellow:active {
+	background-color::#e5a722;
+	color: #edc265;
 }
 
 
