@@ -19,56 +19,55 @@ a {
 
 .button {
 	font: inherit;
+	text-align: center;
 	text-transform: uppercase;	
+	border: none;
+	vertical-align: middle;
 }
 
 .button.rose {
-	text-align: center;
 	color: white;
 	background-color: #fb565a;
-	vertical-align: middle;
-	
 }
 
 .button.rose:hover,
 .button.rose:focus{
-	color:#e74246;
+	background-color:#e74246;
 }
 
 .button.rose:active {
-	color:#d7373b;
+	background-color:#d7373b;
+	color: #e37376;
 }
 
 .button.green {
-	text-align: center;
 	color: white;
 	background-color: #00ca74;
-	vertical-align: middle;
-}
+}	
 
 .button.green:hover,
 .button.green:focus{
-	color:#00bc6c;
+	background-color::#00bc6c;
 }
 
 .button.green:active {
-	color:#00aa62;
+	background-color::#00aa62;
+	color: #00aa62;
 }
 
 .button.yellow {
-	text-align: center;
 	color: white;
 	background-color: #efc84a;
-	vertical-align: middle;
 }
 
 .button.yellow:hover,
 .button.yellow:focus{
-	color:#eab534;
+	background-color::#eab534;
 }
 
 .button.yellow:active {
-	color:#e5a722;
+	background-color::#e5a722;
+	color: #edc265;
 }
 
 /*Панель навигации*/
@@ -76,6 +75,7 @@ a {
 	color: black;
 	line-height: 30px;
 	text-transform: uppercase;
+	
 }
 
 .site-navigation { 						
@@ -98,7 +98,6 @@ a {
 .cart-navigation a:active {
 	color: #a6a6a6;
 }	
-
 
 .main-header-logo img:hover,
 .main-header-logo img:focus {
@@ -128,6 +127,7 @@ h1.know {
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .services-list { 						
@@ -177,13 +177,17 @@ p.we-are {
 	list-style: none;
 }
 
-.partners-list a:hover,
-.partners-list a:focus {
-	color: #cccccc;
+.partner-item img {
+	opacity: 0.3;
 }
 
-.partners-list a:active {
-	color: #e5e5e5;
+ img:hover,
+ img:focus {
+	 opacity: 1;
+}
+
+.partner-item img:active {
+	 opacity: 0.1;
 }
 
 /*Наш адрес*/
@@ -198,14 +202,7 @@ p.we-are {
 }
 
 /*Соц.сети*/
-.partner-item img:hover,
-.partner-item img:focus {
-	 opacity: 0.8;
-}
 
-.partner-item img:active {
-	 opacity: 0.1;
-}
 
 /*Подвал*/
 
@@ -245,12 +242,12 @@ label{
 	font:inherit;
 	line-height:18px;
 	color: #444444;
-	border: 2px solid #eeeeee;
+	border: 2px solid #d7dcde;
 }
 
 .user-form input:hover,
 .user-form textarea:hover {
-	border-color: 2px solid #dfdfdf;
+	border-color: 2px solid #b4b9bb;
 }
 
 .user-form input:focus 
@@ -260,5 +257,149 @@ label{
 
 .user-form input:invalid {
 	border-color: 2px solid red;
+}
+
+
+/*МАГАЗИН*/
+.page-title {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+
+/*Фильтры*/
+.filter fieldset {
+	border:none;
+}
+
+legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.filter ul {
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+	font: inherit;
+}
+
+.filter-grid-radio input:hover + label {
+	color:#b8b8b8;
+}
+
+.count-parameters {
+	text-transform: uppercase;
+}
+
+.count-parameters input:hover {
+	border-color: 2px solid #dfdfdf;
+}
+
+.count-parameters input:focus {
+	border-color: 2px solid black;
+}
+
+.count-parameters input:invalid {
+	border-color: 2px solid red;
+}
+
+
+.filter-button {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	background-color: #eeeeee;
+	border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	background-color: #dfdfdf;
+}
+
+.filter-button:active {
+	background-color: #d5d5d5;
+}
+
+/*Сортировка*/
+
+.sorting p {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.sorting-list {
+	list-style: none;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.sorting-list a{
+	color: #b8b8b8;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+	color: #666666;
+}
+
+.sorting-list a:active {
+	color: black;
+}
+
+.button-current { /*Почему не меняет цвет?*/
+	color: black;
+}
+
+
+/*Каталог*/
+
+.catalog-list{
+	list-style: none;
+}
+
+.catalog-item:hover {
+
+}
+
+
+/*Пагинация*/
+
+.pagination-list {
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.pagination-item a {
+	color: black;
+	background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+	background-color: #d5d5d5;
+}
+
+.pagination-item-active a {
+	color:black;
+	background-color: #ffffff;
+	border: 2px solid #dbdbdb;
+	border-radius: 2px;
+}
+.pagination-item-active a:hover,
+.pagination-item-active a:focus,
+.pagination-item-active a:active {
+	background-color: #ffffff;
 }
 

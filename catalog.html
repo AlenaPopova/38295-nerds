@@ -25,7 +25,7 @@
 		</nav>
 	</header>
 	<main class="container">
-		<h1 class="page-title">Магазин готовых шаблонов</h1>
+		<p class="page-title">Магазин готовых шаблонов</p>
 		
 		<section class="filters">
 			<h2 class="visially-hidden">Фильтр</h2> 
@@ -38,17 +38,18 @@
 							
 						</script>
 					</div>
+					<div class="count-parameters">
+						<label for="count-from">От</label>
+						<input class="filter-count" id="count-from" type="text" name="from" placeholder="0">
 
-					<label for="count-from">От</label>
-					<input class="filter-count" id="count-from" type="text" name="from" placeholder="0">
-
-					<label for="count-to">До</label>
-					<input class="filter-count" id="count-to" type="text" name="to" placeholder="15 000">
+						<label for="count-to">До</label>
+						<input class="filter-count" id="count-to" type="text" name="to" placeholder="15 000">
+					</div>	
 				</fieldset>	
 
 				<fieldset>
 					<legend>Сетка</legend>
-						 <ul>
+						 <ul class="filter-list">
 							<li class="filter-option">
 								<input class="filter-grid-radio" id="grid-adaptive" type="radio" value="adaptive" name="grid-group" checked> 
 								<label for="grid-adaptive">Адаптивная</label>
@@ -67,7 +68,7 @@
 
 				<fieldset>
 					<legend>Особенности</legend>
-					<ul>
+					<ul class="filter-list">
 						<li>
 							<input class="input-filter-checkbox" type="checkbox" name="slaider" value="" id="filter-slaider" checked>
 							<label for="filter-slaider">Слайдер</label>
@@ -90,13 +91,14 @@
 						</li>	
 					</ul>	
 				</fieldset>		
-				<button class="filter-button" type="submit" value="Показать">Показать</button>
+				<button class="button filter-button" type="submit" value="Показать">Показать</button>
 			</form>
 		</section>
 
-		<section class="sorting">
+		<section class="sorting"> 
+			<p>Сортировать</p>
 			<ul class="sorting-list">
-				<li class="sorting-link"><a class="button"> По цене </a></li>
+				<li class="sorting-link button-current"><a class="button"> По цене </a></li>
 				<li class="sorting-link"><a class="button" href="#">По типу</a></li>
 				<li class="sorting-link"><a class="button" href="#">По названию</a></li>
 			</ul>
@@ -119,7 +121,7 @@
 							alt="Веб-сайт курорта 'SEDONA'">
 						</a>
 					</div>
-					<div>
+					<div class="item-active">
 						Информационный сайт для туристов
 						<a class="button rose" href="#">9900 руб.</a>
 					</div>
@@ -206,39 +208,39 @@
 				</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item"> <a>1</a> </li>
-				<li class="pagination-item"> <a href="#">2</a> </li>
-				<li class="pagination-item"> <a href="#">3</a> </li>
-				<li class="pagination-item"> <a href="#">Следующая</a> </li>
+				<li class="pagination-item pagination-item-active"><a>1</a> </li>
+				<li class="pagination-item"><a href="#">2</a> </li>
+				<li class="pagination-item"><a href="#">3</a> </li>
+				<li class="pagination-item"><a class="button" href="#">Следующая</a> </li>
 			</ul>
 		</section>
 
 		<section class="map">
 			<h2 class="visially-hidden">Наш адрес</h2><!--в последствии необходимо скрыть -->
 			<img src="img/map-and-marker.jpg" width="1440" height="416" alt="Наш адрес">
-			<p>Nerds disign studio<br>
-				191186, Санкт-Петербург, <br>
-				ул. Конюшенная, д. 19/8</p>
-			<p>тел. +7(812)275-75-75</p>
+			<p class="name-of-studio">Nerds disign studio</p>
+				<p class="adress">191186, Санкт-Петербург, <br>
+				ул. Конюшенная, д. 19/8 <br>
+				тел. +7(812)275-75-75</p>
 			<a class="button rose" href="contacts.html">Напишите нам</a>
 		</section>
 	</main>
 
-		<footer class="main-footer">
+	<footer class="main-footer">
 		<div class="social-footer">
-			<h2>Давайте дружить, это выгодно!</h2> 
-			<span>Скидка 10% для друзей из социальный сетей.</span> 
+			<p class="friend">Давайте дружить, это выгодно!</h2> <!--это можно сделать заголовком? -->
+			<p class="discont">Скидка 10% для друзей из социальный сетей.</p>
 			<ul>
 				<li><a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
 				<li><a class="social-button" href="#" aria-label="FB">FB</a></li>
 				<li><a class="social-button" href="#" aria-label="Instagramm">Instagramm</a></li>
 			</ul>
-			</ul>
 		</div>
 	</footer>
 
 	<section>
-		<h1>Напишите нам</h1> <form class="user" method="post" action="https://echo.htmlacademy.ru">
+		<h1>Напишите нам</h1> 
+		<form class="user-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
 				<label for="user-name">Ваше имя:</label>
 				<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
@@ -251,10 +253,9 @@
 				<label for="user-letter">Текст письма:</label>
 				<textarea id="user-letter" name="your-letter" rows="5" cols="50" placeholder="В свободной форме"></textarea>
 			</p>
-			<button class="send-letter" type="submit" value="Отправить">Отправить</button>
+			<button class="button rose send-letter" type="submit" value="Отправить">Отправить</button>
 		</form>
-		<button  class="modal-close" type="button" aria-label="Закрыть форму"> Закрыть
-		</button>
+		<button  class="modal-close" type="button" aria-label="Закрыть форму"> Закрыть</button>
 	</section>
 
 </body>
