@@ -23,24 +23,24 @@ a {
 	text-transform: uppercase;	
 	border: none;
 	vertical-align: middle;
-}
-
-.button.rose {
 	color: white;
 	background-color: #fb565a;
 }
-
-.button.rose:hover,
-.button.rose:focus{
+	
+.button:hover,
+.button:focus{
 	background-color:#e74246;
 }
 
-.button.rose:active {
+.button:active {
 	background-color:#d7373b;
-	color: #e37376;
-	opacity:0.3;
+
 }
 
+a.button:active {  
+	color: rgba(255,255,255,0.3); 
+	 
+}
 
 /*Панель навигации*/
 .main-navigation {
@@ -107,34 +107,31 @@ h1.know {
 	list-style: none;
 }
 
-.button.green {
-	color: white;
+.service-application .button {
 	background-color: #00ca74;
-}	
-
-.button.green:hover,
-.button.green:focus{
-	background-color::#00bc6c;
 }
 
-.button.green:active {
-	background-color::#00aa62;
-	color: #0faf6b;
+.service-application .button:hover,
+.service-application .button:focus {
+	background-color: #00bc6c;
 }
 
-.button.yellow {
-	color: white;
+.service-application .button:active {
+	background-color: #00aa62;
+}
+
+
+.service-presentation .button {
 	background-color: #efc84a;
 }
 
-.button.yellow:hover,
-.button.yellow:focus{
-	background-color::#eab534;
+.service-presentation .button:hover,
+.service-presentation .button:focus {
+	background-color: #eab534;
 }
 
-.button.yellow:active {
-	background-color::#e5a722;
-	color: #edc265;
+.service-presentation .button:active {
+	background-color: #e5a722;
 }
 
 
@@ -175,6 +172,7 @@ p.we-are {
 	list-style: none;
 }
 
+
 /*Партнеры*/
 .partners-list {
 	list-style: none;
@@ -184,8 +182,7 @@ p.we-are {
 	opacity: 0.3;
 }
 
- img:hover,
- img:focus {
+ .partner-item img:hover {
 	 opacity: 1;
 }
 
@@ -316,6 +313,7 @@ legend {
 	line-height: 18px;
 	background-color: #eeeeee;
 	border: none;
+	color: black;
 }
 
 .filter-button:hover,
@@ -325,6 +323,11 @@ legend {
 
 .filter-button:active {
 	background-color: #d5d5d5;
+	
+}
+
+button[type="submit"]:active { /*задает прозрачность тексту на кнопке*/
+	color: rgba(0,0,0,0.3); 
 }
 
 /*Сортировка*/
@@ -340,6 +343,7 @@ legend {
 	list-style: none;
 	font-size: 14px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .sorting-list a{
@@ -348,15 +352,23 @@ legend {
 
 .sorting-list a:hover,
 .sorting-list a:focus {
-	color: #666666;
+	color: black;
+	opacity:0.6;
 }
 
 .sorting-list a:active {
 	color: black;
+	opacity: 1;
 }
 
-.button-current { /*Почему не меняет цвет?*/
+.sorting-current a {
 	color: black;
+}
+
+.sorting-current:hover a,
+.sorting-current:focus a {
+	color:black;
+	opacity: 1;
 }
 
 
@@ -394,15 +406,21 @@ legend {
 	background-color: #d5d5d5;
 }
 
-.pagination-item-active a {
+.pagination-item:active a {
+	color: black;
+	opacity: 0.3;
+}
+
+.pagination-item-current a {
 	color:black;
 	background-color: #ffffff;
 	border: 2px solid #dbdbdb;
 	border-radius: 2px;
 }
-.pagination-item-active a:hover,
-.pagination-item-active a:focus,
-.pagination-item-active a:active {
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
 	background-color: #ffffff;
 }
+
+
 
