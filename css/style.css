@@ -37,7 +37,7 @@ a {
 
 }
 
-a.button:active {  
+a.button:active {  /*задает прозрачность тексту на кнопке*/
 	color: rgba(255,255,255,0.3); 
 	 
 }
@@ -326,7 +326,12 @@ legend {
 	
 }
 
-button[type="submit"]:active { /*задает прозрачность тексту на кнопке*/
+/*button[type="submit"]:active { /*задает прозрачность тексту на кнопке
+	color: rgba(0,0,0,0.3); 
+}
+*/
+
+button.filter-button:active { /*задает прозрачность тексту на кнопке*/
 	color: rgba(0,0,0,0.3); 
 }
 
