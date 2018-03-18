@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
@@ -25,6 +26,8 @@ a {
 	vertical-align: middle;
 	color: white;
 	background-color: #fb565a;
+	
+	align-self: flex-start;
 }
 	
 .button:hover,
@@ -42,16 +45,55 @@ a.button:active {  /*задает прозрачность тексту на к�
 	 
 }
 
+.container {
+	width: 1160px;
+	margin: 0 140px 0 120px;
+	padding: 0 10px;
+	
+}
+
 /*Панель навигации*/
 .main-navigation {
 	color: black;
 	line-height: 30px;
 	text-transform: uppercase;
 	
+	display: flex;
+	justify-content: row;
+}
+
+.main-navigation-wrapper {
+	width: 100%;                 /*Почему не на весь экран растягивается???*/
+	/*margin-bottom: 97px;*/
+	background-color: #eeeeee;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .site-navigation { 						
 	list-style: none;
+	
+	display: flex;
+	justify-content: space-around;
+	
+	width: 660px;
+	margin: 0;
+	margin-top: 85px;
+	margin-bottom: 35px;
+	padding: 0;
+	
+}
+
+.cart-navigation{
+	width: 160px;
+	margin: 0;
+	margin-top: 85px;
+	margin-bottom: 35px;
+	padding: 0;
+	
 }
 
 .site-navigation a,
@@ -72,6 +114,12 @@ a.button:active {  /*задает прозрачность тексту на к�
 	opacity:0.3;
 }	
 
+.main-header-logo {
+	margin-top: 49px;
+	margin-right: 100px;
+	margin-bottom: 85px;
+}
+
 .main-header-logo:hover img,
 .main-header-logo:focus img {
 	 opacity: 0.8;
@@ -83,16 +131,44 @@ a.button:active {  /*задает прозрачность тексту на к�
 
 /*Шапка и слайды*/
 .know-more {
-	background-color: #eeeeee;
+	/*background-color: #eeeeee;*/
+	width: 100%;
+	background: #eeeeee;
+	margin-bottom: 80px;
+}
+
+.slides-container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.short-info {
+	width: 376px;
+	
+	display: flex;
+	flex-direction: column;	
 }
 
 h1.know {
 	font-size: 55px;
 	line-height: 55px;
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
 }	
 
 .slides-switches { 						
 	list-style: none;
+}
+
+.slide-radio {
+	list-style: none;
+	width: 20px;
+	display:flex;
+	justify-content: space-between;
+	
 }
 
 /*Услуги*/
@@ -105,6 +181,23 @@ h1.know {
 
 .services-list { 						
 	list-style: none;
+	margin:0;
+	padding:0;
+	
+	
+	display: flex;
+	
+}
+
+.service-item {
+	width: 300px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+}
+
+hr {
+	width: 1160px;
+	
 }
 
 .service-application .button {
@@ -136,46 +229,113 @@ h1.know {
 
 
 /*О нас*/ 
+
 p.we-are {					
 	font-size: 45px;
 	line-height: 45px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
+	
+	
+}
+
+.our-orders {
+	margin:0;
+	padding:0;
+	margin-top: 45px; 
 }
 
 .doing-orders {
 	text-transform: uppercase;
 	font-weight: bold;
-}
-
-.statistic-info { 			
-	text-transform: uppercase;
-	font-weight: bold;
+	padding: 0px;
+	
 }
 
 .list-orders {
 	font-size: 16px;
 	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	
+	margin-left: 20px;
+	margin-bottom: 80px;
+}
+
+.list-orders li {
+	padding-bottom: 35px;
+}
+
+.list-orders li:first-child {
+	padding-top: 20px;
 }
 
 /*Статистика*/
+.container-info {
+	display:flex;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.containter-about-us{
+	flex-direction: column;
+	width: 660px;
+}
+
+.container-statistic {
+	flex-direction: column;
+	width: 360px;
+}
+
+.statistic-info { 			
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 41px;
+	margin-left: 20px;
+}
+
+.statistic-list { 						
+	list-style: none;
+	margin:0;
+	padding: 0;
+	margin-top: 50px;
+	
+	
+	display: flex;
+	justify-content: space-between;
+}
 
 .statictic-percent {
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 10.3px;
+	margin-bottom: 30px;
+	padding-right: 25px;
 }
 
 .statictic-parameter {
 	line-height: 18px; 
+	padding-right: 25px;
+	margin-bottom: 75px;
 }
 
-.statistic-list { 						
-	list-style: none;
-}
+
 
 
 /*Партнеры*/
 .partners-list {
 	list-style: none;
+	width: 1160px;
+	margin: 0;
+	padding: 0;
+	margin-left: 140px;
+	margin-right: 140px;
+	
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 44px;
+	
 }
 
 .partner-item img {
@@ -191,6 +351,15 @@ p.we-are {
 }
 
 /*Наш адрес*/
+.map {
+	
+	margin-top: 80px;
+}
+
+.map img {
+	margin: 0;
+	padding: 0;
+}
 .name-of-studio {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -211,6 +380,12 @@ p.we-are {
 	line-height: 42px;
 	font-weight:bold;
 	color: black;
+	margin: 0;
+	
+}
+
+.discont {
+	margin:0;
 }
 
 .main-footer.discont {
@@ -220,6 +395,24 @@ p.we-are {
 
 .main-footer ul {
 	list-style: none;
+}
+
+.social-button-list {
+	width: 260px;
+	margin-left: 120px;
+	padding-left: 20px; 
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+.be-friend {
+	width: 560px;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*Напишите нам*/
@@ -265,6 +458,9 @@ label{
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
+	margin:0;
+	padding:0;
+	margin-bottom: 175px;
 }
 
 /*Фильтры*/
@@ -277,6 +473,11 @@ legend {
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.filters {
+	width: 260px;
 }
 
 .filter ul {
@@ -286,12 +487,30 @@ legend {
 	font: inherit;
 }
 
+.filters-container{
+	width: 260px;
+}
+
 .filter-grid-radio input:hover + label {
 	color:#b8b8b8;
 }
 
+.filter-list  {
+	margin:0;
+	padding:0;
+}
+
+.filter-list li {
+	padding-bottom: 25px;
+}
+
+.filter-option:nth-child(3) {
+	margin-bottom: 30px;
+}
+
 .count-parameters {
 	text-transform: uppercase;
+	margin-bottom: 62px;
 }
 
 .count-parameters input:hover {
@@ -314,6 +533,12 @@ legend {
 	background-color: #eeeeee;
 	border: none;
 	color: black;
+	
+	margin: 0;
+	padding:0;
+	width: 260px;
+	margin-top: 50px;
+	margin-left: 10px;
 }
 
 .filter-button:hover,
@@ -379,8 +604,29 @@ button.filter-button:active { /*задает прозрачность текст
 
 /*Каталог*/
 
+.catalog {
+	width: 760px;
+}
+
+.catalog-columns {
+	display:flex;
+	justify-content: space-between;
+}
+
 .catalog-list{
 	list-style: none;
+	margin:0;
+	padding: 0;
+	
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	width: 360px;
+	margin-bottom: 33px;
+	
 }
 
 .catalog-item:hover {
@@ -395,11 +641,20 @@ button.filter-button:active { /*задает прозрачность текст
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 18px;
+	
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
 .pagination-item a {
 	color: black;
 	background-color: #eeeeee;
+	width: 500px;
+	margin-right: 11px;
+	
+	
+	
 }
 
 .pagination-item a:hover,
