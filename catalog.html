@@ -31,10 +31,10 @@
 	<main class="container">
 		<p class="page-title">Магазин готовых шаблонов</p>
 
-		<div class="catalog-columns">
+		<div class="catalog-container">
 
 			<section class="filters">
-				<h2 class="visially-hidden">Фильтр</h2> 
+				<h2 class="visially-hidden">Фильтр</h2>
 				
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<fieldset>
@@ -100,132 +100,139 @@
 					<button class="button filter-button" type="submit" value="Показать">Показать</button>
 				</form>
 			</section>
+			<div class="catalog">
+				<section class="sorting"> 
+					
+					<div class="sorting-container">
+						<p>Сортировать:</p>
+						<div class="sorting-by">
+							<ul class="sorting-list">
+								<li class="sorting-link sorting-current"><a">По цене</a></li>
+								<li class="sorting-link"><a href="#">По типу</a></li>
+								<li class="sorting-link"><a href="#">По названию</a></li>
+							</ul>
+						</div>
+						<div class="sorting-mix">
+						<ul class="sorting-list sorting-up-down">
+							<li class="sorting-link"><a>По убыванию</a></li>
+							<li class="sorting-link"><a href="#">По возрастанию</a></li>
+						</ul>
+					</div>	
+				</section>
 
-			<section class="sorting"> 
-				<p>Сортировать</p>
-				<ul class="sorting-list">
-					<li class="sorting-link sorting-current"><a">По цене</a></li>
-					<li class="sorting-link"><a href="#">По типу</a></li>
-					<li class="sorting-link"><a href="#">По названию</a></li>
-				</ul>
-				<ul class="sorting-list sorting-up-down">
-					<li class="sorting-link"><a>По убыванию</a></li>
-					<li class="sorting-link"><a href="#">По возрастанию</a></li>
-				</ul>
-			</section>
+				<section class="items">
+					<h2 class="visially-hidden">Каталог сайтов</h2><!--в последствии необходимо-->
+					<ul class="catalog-list">
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">SEDONA</a>	
+							</h3>
+							<div class="catalog-item-image">
+								<a a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-sedona.jpg" width="360" height="576" 
+									alt="Веб-сайт курорта 'SEDONA'">
+								</a>
+							</div>
+							<div class="item-active">
+								Информационный сайт для туристов
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
 
-			<section class="catalog">
-				<h2 class="visially-hidden">Каталог сайтов</h2><!--в последствии необходимо-->
-				<ul class="catalog-list">
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">SEDONA</a>	
-						</h3>
-						<div class="catalog-item-image">
-							<a a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-sedona.jpg" width="360" height="576" 
-								alt="Веб-сайт курорта 'SEDONA'">
-							</a>
-						</div>
-						<div class="item-active">
-							Информационный сайт для туристов
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">PINK</a>
+							</h3>
+							<div class="catalog-item-image">
+								<a a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-pink.jpg" width="360" height="576" 
+									alt="Веб-сайт PINK">
+								</a>
+							</div>
+							<div>
+								Продуктовый лендинг приложения для iOS и Android
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
 
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">PINK</a>
-						</h3>
-						<div class="catalog-item-image">
-							<a a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-pink.jpg" width="360" height="576" 
-								alt="Веб-сайт PINK">
-							</a>
-						</div>
-						<div>
-							Продуктовый лендинг приложения для iOS и Android
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">BORODINKSI</a>
+							</h3>
+							<div class="catalog-item-image">
+								<a a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-barbershop.jpg" width="360" height="576" alt="Веб-сайт барбершопа 'Бородинский'">
+								</a>
+							</div>
+							<div>
+								Сайт салона красоты.<br>
+								Для мужчин, да.
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
 
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">BORODINKSI</a>
-						</h3>
-						<div class="catalog-item-image">
-							<a a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Веб-сайт барбершопа 'Бородинский'">
-							</a>
-						</div>
-						<div>
-							Сайт салона красоты.<br>
-							Для мужчин, да.
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">MISHKA</a>
+							</h3>
+							<div class="catalog-item-image">
+								<a a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-mishka.jpg" width="360" height="576" 
+									alt="Веб-сайт вязаных штучек 'MISHKA'">
+								</a>
+							</div>
+							<div>
+								Интернет-магазин вязаных игрушек
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
 
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">MISHKA</a>
-						</h3>
-						<div class="catalog-item-image">
-							<a a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-mishka.jpg" width="360" height="576" 
-								alt="Веб-сайт вязаных штучек 'MISHKA'">
-							</a>
-						</div>
-						<div>
-							Интернет-магазин вязаных игрушек
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">A+</a>
+							</h3>
+							<div class="catalog-item-image">
+								<a a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-aplus.jpg" width="360" height="576" 
+									alt="Веб-сайт школы по Aplus'">
+								</a>	
+							</div>
+							<div>
+								Лендинг курсов повышения квалификации
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
 
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">A+</a>
-						</h3>
-						<div class="catalog-item-image">
-							<a a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-aplus.jpg" width="360" height="576" 
-								alt="Веб-сайт школы по Aplus'">
-							</a>	
-						</div>
-						<div>
-							Лендинг курсов повышения квалификации
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
-
-					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">КВАСТ</a>
-						</h3>
-						<div class="catalog-item-image">
-							<a class="catalog-image" href="catalog-item.html">
-								<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
-								<img src="img/img-kvast.jpg" width="360" height="576" 
-								alt="Веб-сайт крафтого кваса">
-							</a>	
-						</div>		
-						<div>
-							Промо-сайт производителя крафтового кваса
-							<a class="button" href="#">9900 руб.</a>
-						</div>
-					</li>
-				</ul>
-				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current"><a>1</a> </li>
-					<li class="pagination-item pagination-application"><a class="button" href="#">2</a> </li>
-					<li class="pagination-item pagination-application"><a class="button" href="#">3</a> </li>
-					<li class="pagination-item pagination-application"><a class="button" href="#">Следующая</a> </li>
-				</ul>
-			</section>
+						<li class="catalog-item">
+							<h3>
+								<a href="catalog-item.html">КВАСТ</a>
+							</h3>
+							<div class="catalog-item-image">
+								<a class="catalog-image" href="catalog-item.html">
+									<img src="img/browser.png" width="360" height="40" alt="Выбранный макет">
+									<img src="img/img-kvast.jpg" width="360" height="576" 
+									alt="Веб-сайт крафтого кваса">
+								</a>	
+							</div>		
+							<div>
+								Промо-сайт производителя крафтового кваса
+								<a class="button" href="#">9900 руб.</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="pagination-list">
+						<li class="pagination-item pagination-item-current"><a>1</a> </li>
+						<li class="pagination-item pagination-application"><a class="button" href="#">2</a> </li>
+						<li class="pagination-item pagination-application"><a class="button" href="#">3</a> </li>
+						<li class="pagination-item pagination-application"><a class="button" href="#">Следующая</a> </li>
+					</ul>
+				</section>
+			</div>	
 		</div>	
 	</main>
 

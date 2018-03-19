@@ -48,7 +48,7 @@ a.button:active {  /*задает прозрачность тексту на к�
 .container {
 	width: 1160px;
 	margin: 0 140px 0 120px;
-	padding: 0 10px;
+	padding: 0 20px;
 	
 }
 
@@ -57,13 +57,16 @@ a.button:active {  /*задает прозрачность тексту на к�
 	color: black;
 	line-height: 30px;
 	text-transform: uppercase;
-	
+
+	align-items: flex-start;
 	display: flex;
-	justify-content: row;
+	flex-direction: row;
+
+	/*justify-content: row;*/
 }
 
 .main-navigation-wrapper {
-	width: 100%;                 /*Почему не на весь экран растягивается???*/
+	width: 100%;                 
 	/*margin-bottom: 97px;*/
 	background-color: #eeeeee;
 }
@@ -84,7 +87,6 @@ a.button:active {  /*задает прозрачность тексту на к�
 	margin-top: 85px;
 	margin-bottom: 35px;
 	padding: 0;
-	
 }
 
 .cart-navigation{
@@ -93,7 +95,13 @@ a.button:active {  /*задает прозрачность тексту на к�
 	margin-top: 85px;
 	margin-bottom: 35px;
 	padding: 0;
-	
+}
+
+.main-header-logo {
+	margin-top: 49px;
+	margin-right: 202px;
+	margin-bottom: 85px;
+
 }
 
 .site-navigation a,
@@ -114,11 +122,6 @@ a.button:active {  /*задает прозрачность тексту на к�
 	opacity:0.3;
 }	
 
-.main-header-logo {
-	margin-top: 49px;
-	margin-right: 100px;
-	margin-bottom: 85px;
-}
 
 .main-header-logo:hover img,
 .main-header-logo:focus img {
@@ -184,9 +187,7 @@ h1.know {
 	margin:0;
 	padding:0;
 	
-	
 	display: flex;
-	
 }
 
 .service-item {
@@ -236,8 +237,6 @@ p.we-are {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 35px;
-	
-	
 }
 
 .our-orders {
@@ -324,13 +323,13 @@ p.we-are {
 
 
 /*Партнеры*/
+
 .partners-list {
 	list-style: none;
 	width: 1160px;
 	margin: 0;
 	padding: 0;
-	margin-left: 140px;
-	margin-right: 140px;
+	
 	
 	display: flex;
 	justify-content: space-around;
@@ -338,7 +337,9 @@ p.we-are {
 	
 }
 
+
 .partner-item img {
+	margin-top: 62px; /*у всех картинок разный отступ*/
 	opacity: 0.3;
 }
 
@@ -350,15 +351,17 @@ p.we-are {
 	 opacity: 0.1;
 }
 
+
 /*Наш адрес*/
 .map {
-	
 	margin-top: 80px;
 }
 
 .map img {
+	width: 100%;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 69px;
 }
 .name-of-studio {
 	text-transform: uppercase;
@@ -400,14 +403,22 @@ p.we-are {
 .social-button-list {
 	width: 260px;
 	margin-left: 120px;
-	padding-left: 20px; 
+	padding-left: 20px;
+	padding-right: 20px; 
+	margin-bottom:70px; 
+
 	
 	display: flex;
 	justify-content: space-between;
 }
 
+.social-button-list li {
+	padding-right: 13px;
+}
 .be-friend {
 	width: 560px;
+	margin-left: 100px;
+	margin-right: 340px;
 }
 
 .footer-container {
@@ -478,6 +489,7 @@ legend {
 
 .filters {
 	width: 260px;
+	margin-right: 140px;
 }
 
 .filter ul {
@@ -511,6 +523,13 @@ legend {
 .count-parameters {
 	text-transform: uppercase;
 	margin-bottom: 62px;
+}
+.filter-count {
+	width: 80px;
+	margin-top: 14px;
+	margin-right: 33px;
+	margin-left: 11px;
+	
 }
 
 .count-parameters input:hover {
@@ -564,9 +583,13 @@ button.filter-button:active { /*задает прозрачность текст
 
 .sorting p {
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 30px;
 	font-weight: bold;
-	line-height: 18px;
+
+	padding: 0;
+	margin: 0;
+	margin-right:265px;  
 }
 
 .sorting-list {
@@ -574,6 +597,35 @@ button.filter-button:active { /*задает прозрачность текст
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+
+	padding: 0;
+	margin: 0;
+	width: 280px;
+}
+
+.sorting-up-down li {
+	width: 60px;
+	padding: 0;
+	margin: 0;
+	margin-left: 48px;
+}
+
+.sorting-container {
+	display: flex;
+	width: 760px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+
+.sorting-container .sorting-list {
+	display: flex;
+}
+
+
+
+.sorting-list li{
+	margin-right: 25px;
 }
 
 .sorting-list a{
@@ -604,11 +656,11 @@ button.filter-button:active { /*задает прозрачность текст
 
 /*Каталог*/
 
-.catalog {
+.items {
 	width: 760px;
 }
 
-.catalog-columns {
+.catalog-container {
 	display:flex;
 	justify-content: space-between;
 }
@@ -626,6 +678,8 @@ button.filter-button:active { /*задает прозрачность текст
 .catalog-item {
 	width: 360px;
 	margin-bottom: 33px;
+	
+
 	
 }
 
