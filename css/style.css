@@ -37,72 +37,52 @@ a {
 
 .button:active {
 	background-color:#d7373b;
-
 }
 
 a.button:active {  /*задает прозрачность тексту на кнопке*/
-	color: rgba(255,255,255,0.3); 
-	 
+	color: rgba(255,255,255,0.3);  
 }
 
-.container {
-	width: 1160px;
-	margin: 0 140px 0 120px;
-	padding: 0 20px;
-	
-}
+
 
 /*Панель навигации*/
+
+.main-header {
+	padding-top: 49px;
+	padding-bottom: 35px; 
+}
+
 .main-navigation {
 	color: black;
 	line-height: 30px;
 	text-transform: uppercase;
-
-	align-items: flex-start;
-	display: flex;
-	flex-direction: row;
-
-	/*justify-content: row;*/
 }
 
-.main-navigation-wrapper {
-	width: 100%;                 
-	/*margin-bottom: 97px;*/
-	background-color: #eeeeee;
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding-left: 20px; /**добавлены паддинги чтобы при меньшей ширине*/
+	padding-right: 20px; /* экрана, страница не прилипала к краям*/
 }
 
-.main-navigation-wrapper .container {
+.main-navigation {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 }
 
 .site-navigation { 						
 	list-style: none;
+	width: 660px;
 	
 	display: flex;
-	justify-content: space-around;
-	
-	width: 660px;
-	margin: 0;
-	margin-top: 85px;
-	margin-bottom: 35px;
-	padding: 0;
+	justify-content: flex-start;
 }
 
 .cart-navigation{
 	width: 160px;
-	margin: 0;
-	margin-top: 85px;
-	margin-bottom: 35px;
-	padding: 0;
+	justify-content: flex-end;
 }
 
-.main-header-logo {
-	margin-top: 49px;
-	margin-right: 202px;
-	margin-bottom: 85px;
-
-}
 
 .site-navigation a,
 .cart-navigation a {
@@ -132,11 +112,11 @@ a.button:active {  /*задает прозрачность тексту на к�
 	 opacity: 0.3;
 }
 
+
 /*Шапка и слайды*/
+
 .know-more {
-	/*background-color: #eeeeee;*/
-	width: 100%;
-	background: #eeeeee;
+	background-color: #eeeeee;	
 	margin-bottom: 80px;
 }
 
@@ -145,6 +125,7 @@ a.button:active {  /*задает прозрачность тексту на к�
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center; 
 }
 
 .short-info {
@@ -162,8 +143,18 @@ h1.know {
 	padding: 0;
 }	
 
+.button-know-more {
+	margin-top: 42px;
+}
+
 .slides-switches { 						
 	list-style: none;
+}
+
+li.slides-item {
+	align-self: 	
+	background-image: url("img/slide1.png"); /*НЕ РАБОТАЕТ*/
+	
 }
 
 .slide-radio {
