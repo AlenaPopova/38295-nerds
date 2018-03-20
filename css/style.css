@@ -44,6 +44,13 @@ a.button:active {  /*задает прозрачность тексту на к�
 }
 
 
+.visially-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
 
 /*Панель навигации*/
 
@@ -73,14 +80,23 @@ a.button:active {  /*задает прозрачность тексту на к�
 .site-navigation { 						
 	list-style: none;
 	width: 660px;
-	
+	margin-left: 202px;
+
 	display: flex;
 	justify-content: flex-start;
+}
+
+.site-navigation li{
+	padding-right: 45px;
+	vertical-align: middle;
+	
 }
 
 .cart-navigation{
 	width: 160px;
 	justify-content: flex-end;
+	
+
 }
 
 
@@ -222,6 +238,10 @@ hr {
 
 /*О нас*/ 
 
+.container-info {
+	margin-bottom: 77px;
+}
+
 p.we-are {					
 	font-size: 45px;
 	line-height: 45px;
@@ -250,7 +270,7 @@ p.we-are {
 	padding: 0;
 	
 	margin-left: 20px;
-	margin-bottom: 80px;
+	/*margin-bottom: 80px;*/
 }
 
 .list-orders li {
@@ -307,7 +327,6 @@ p.we-are {
 .statictic-parameter {
 	line-height: 18px; 
 	padding-right: 25px;
-	margin-bottom: 75px;
 }
 
 
@@ -315,17 +334,21 @@ p.we-are {
 
 /*Партнеры*/
 
+.container-partners {
+	margin-bottom: 44px;
+	width: 1160px;
+	margin: 0 auto;
+}
+
 .partners-list {
 	list-style: none;
-	width: 1160px;
+	
 	margin: 0;
 	padding: 0;
 	
-	
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 44px;
-	
+	align-items: center;
 }
 
 
@@ -456,13 +479,14 @@ label{
 
 
 /*МАГАЗИН*/
-.page-title {
+h1.page-title {
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
 	margin:0;
 	padding:0;
 	margin-bottom: 175px;
+	background-color: #eeeeee;	
 }
 
 /*Фильтры*/
@@ -571,16 +595,29 @@ button.filter-button:active { /*задает прозрачность текст
 }
 
 /*Сортировка*/
+.catalog {
+	width: 760px;
+}
 
 .sorting p {
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
+	flex-grow: 2;
 
 	padding: 0;
 	margin: 0;
-	margin-right:265px;  
+	flex-basis: 380px;
+	
+	/*margin-right:265px; */
+}
+
+.sorting {
+	display: flex;
+	
+	margin: 0 auto;
+	justify-content: space-between;
 }
 
 .sorting-list {
@@ -592,31 +629,33 @@ button.filter-button:active { /*задает прозрачность текст
 	padding: 0;
 	margin: 0;
 	width: 280px;
+}	
+
+.sorting-by li {
+	flex-grow: 4;
 }
 
 .sorting-up-down li {
 	width: 60px;
-	padding: 0;
+	padding-right: 18px;
 	margin: 0;
-	margin-left: 48px;
+	flex-grow: 1;
+	/*margin-left: 45px;*/
+
 }
 
-.sorting-container {
+
+.sorting .sorting-list {
 	display: flex;
-	width: 760px;
-	margin: 0 auto;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-end;
+	
 }
-
-
-.sorting-container .sorting-list {
-	display: flex;
-}
-
 
 
 .sorting-list li{
 	margin-right: 25px;
+	
 }
 
 .sorting-list a{
@@ -646,10 +685,6 @@ button.filter-button:active { /*задает прозрачность текст
 
 
 /*Каталог*/
-
-.items {
-	width: 760px;
-}
 
 .catalog-container {
 	display:flex;
