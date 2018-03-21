@@ -146,9 +146,6 @@ a.button:active {  /*задает прозрачность тексту на к�
 
 .short-info {
 	width: 376px;
-	
-	display: flex;
-	flex-direction: column;	
 }
 
 h1.know {
@@ -203,10 +200,6 @@ li.slides-item {
 	margin-bottom: 80px;
 }
 
-hr {
-	width: 1160px;
-	
-}
 
 .service-application .button {
 	background-color: #00ca74;
@@ -237,6 +230,9 @@ hr {
 
 
 /*О нас*/ 
+.about-us {
+	padding-top: 80px;
+}
 
 .container-info {
 	margin-bottom: 77px;
@@ -285,7 +281,7 @@ p.we-are {
 .container-info {
 	display:flex;
 	justify-content: space-between;
-	margin-top: 80px;
+	
 }
 
 .containter-about-us{
@@ -380,6 +376,10 @@ p.we-are {
 .name-of-studio {
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.our-contacts {
+	width: 319px;
 }
 
 .adress {
@@ -485,7 +485,7 @@ h1.page-title {
 	text-align: center;
 	margin:0;
 	padding:0;
-	margin-bottom: 175px;
+	/*margin-bottom: 175px;*/
 	background-color: #eeeeee;	
 }
 
@@ -689,6 +689,7 @@ button.filter-button:active { /*задает прозрачность текст
 .catalog-container {
 	display:flex;
 	justify-content: space-between;
+	padding-top: 180px;: 
 }
 
 .catalog-list{
