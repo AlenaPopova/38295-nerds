@@ -96,7 +96,6 @@ a.button:active {  /*задает прозрачность тексту на к�
 	width: 160px;
 	justify-content: flex-end;
 	
-
 }
 
 
@@ -166,7 +165,7 @@ h1.know {
 
 li.slides-item {
 	align-self: 	
-	background-image: url("img/slide1.png"); /*НЕ РАБОТАЕТ*/
+	background-image: url("../img/slide1.png"); 
 	
 }
 
@@ -331,6 +330,7 @@ p.we-are {
 /*Партнеры*/
 
 .container-partners {
+	padding-top: 60px;
 	margin-bottom: 44px;
 	width: 1160px;
 	margin: 0 auto;
@@ -349,7 +349,6 @@ p.we-are {
 
 
 .partner-item img {
-	margin-top: 62px; /*у всех картинок разный отступ*/
 	opacity: 0.3;
 }
 
