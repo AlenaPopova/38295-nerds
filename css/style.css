@@ -485,6 +485,7 @@ h1.page-title {
 	text-align: center;
 	margin:0;
 	padding:0;
+	padding-bottom: 116px;
 	/*margin-bottom: 175px;*/
 	background-color: #eeeeee;	
 }
@@ -689,7 +690,7 @@ button.filter-button:active { /*задает прозрачность текст
 .catalog-container {
 	display:flex;
 	justify-content: space-between;
-	padding-top: 180px;: 
+	padding-top: 60px;
 }
 
 .catalog-list{
