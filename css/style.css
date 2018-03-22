@@ -6,11 +6,12 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 	color: black;
 }
 
 header {
-	background-color: #eeeeee;
+	/*background-color: #eeeeee;*/
 }
 
 /*Общие свойства*/
@@ -65,6 +66,7 @@ a.button:active {  /*задает прозрачность тексту на к�
 .main-header {
 	padding-top: 49px;
 	padding-bottom: 35px; 
+	background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -76,8 +78,9 @@ a.button:active {  /*задает прозрачность тексту на к�
 .container {
 	width: 1160px;
 	margin: 0 auto;
-	padding-left: 20px; /**добавлены паддинги чтобы при меньшей ширине*/
-	padding-right: 20px; /* экрана, страница не прилипала к краям*/
+	padding: 0 20px; /**добавлены паддинги чтобы при меньшей ширине*/
+	 					/* экрана, страница не прилипала к краям*/
+	box-sizing: border-box;
 }
 
 .main-navigation {
@@ -91,6 +94,7 @@ a.button:active {  /*задает прозрачность тексту на к�
 	margin-left: 202px;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 
@@ -101,11 +105,31 @@ a.button:active {  /*задает прозрачность тексту на к�
 }
 
 .cart-navigation{
-	width: 160px;
+	max-width: 160px;
 	justify-content: flex-end;
 	
 }
 
+.cart-navigation .cart-link {
+	position: relative;
+	padding-left: 40px;
+}
+
+.cart-link::before {
+	content: "";
+	
+	position: absolute;
+	top: 3px;
+	left: 10px;
+
+	width: 22px;
+	height: 22px;
+	
+	background-image: url("../img/icon_cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: red;
+}
 
 .site-navigation a,
 .cart-navigation a {
@@ -125,6 +149,10 @@ a.button:active {  /*задает прозрачность тексту на к�
 	opacity:0.3;
 }	
 
+/*.site-navigation a:visited { ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ
+	text-decoration: underline;
+	/*text-decoration-color: #fb565a;
+}*/
 
 .main-header-logo:hover img,
 .main-header-logo:focus img {
@@ -138,52 +166,124 @@ a.button:active {  /*задает прозрачность тексту на к�
 
 /*Шапка и слайды*/
 
-.know-more {
+.slider {
+	position: relative;
+
 	background-color: #eeeeee;	
+	margin: 0px;
 	margin-bottom: 80px;
+	
 }
 
-.slides-container {
+.slider-switches {
+	position: absolute;
+
+  	left: 50%;
+  	bottom: 104px;
+  	z-index: 100;
+  
+  	width: 160px;
+  	height: 18px;
+
+ 	text-align: center;
+  	font-size: 0;
+  	transform: translateX(-50%);
+}
+
+.slider-switches i {
+	position: relative;
+
+	display: inline-block;
+  	width: 18px;
+  	height: 18px;
+	border-radius: 50%;
+	padding: 8px;
+
+  	cursor: pointer;	
+}
+
+.slider-switches i::after {
+	content: "";
+  
+  	position: absolute;
+ 	top: 8px;
+  	left: 8px;
+  	z-index: 1;
+  
+  	width: 18px;
+  	height: 18px;
+  
+  	background: #ffffff;
+    border-radius: 50%;
+}
+
+.slider-switches .active-switch::before {
+	content: "";
+  
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	z-index: 2;
+  
+  	width: 4px;
+  	height: 4px;
+  	margin: -4px;
+  
+  	background-color: inherit;
+  	border: 2px solid #c1c1c1;
+ 	border-radius: 50%;
+}
+
+.slider-list { 						
+	list-style: none;
+
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center; 
 }
 
-.short-info {
-	width: 376px;
+.slider-item {
+	display: none;
+	padding: 78px 0 80px 0;
 }
 
-h1.know {
+.slider-item:nth-child(1) {
+	display: block;
+}
+
+.slider-item:nth-child(1) {
+	background-image: url("../img/slide1.png");
+  	background-repeat: no-repeat;
+  	background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+	background-image: url("../img/slide2.png");
+  	background-repeat: no-repeat;
+  	background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+	background-image: url("../img/slide3.png");
+  	background-repeat: no-repeat;
+  	background-position: 100% 20px;
+}
+
+.slider-item h3 {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500px;
+
+	max-width: 600px;
+  	margin: 0;
+  	margin-bottom: 27px;
+}
+
+.slider-item p{
 	margin: 0;
-	margin-bottom: 30px;
-	padding: 0;
-}	
-
-.button-know-more {
-	margin-top: 42px;
+	margin-bottom: 42px;
+	max-width: 430px; 
 }
 
-.slides-switches { 						
-	list-style: none;
-}
-
-li.slides-item {
-	align-self: 	
-	background-image: url("../img/slide1.png"); 
-	
-}
-
-.slide-radio {
-	list-style: none;
-	width: 20px;
-	display:flex;
-	justify-content: space-between;
-	
-}
 
 /*Услуги*/
 .services-list { 						
@@ -194,8 +294,8 @@ li.slides-item {
 	
 	display: flex;
 
-	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования 
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .service-item h3 {
