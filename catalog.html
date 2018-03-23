@@ -35,25 +35,31 @@
 		<div class="container catalog-container">
 			<section class="filters">
 				<h2 class="visially-hidden">Фильтр</h2>
-				
+
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<fieldset>
-						<legend>Стоимость:</legend>
-						<div id="range-count" class="range" range-maxvalue="30000" range-values="0, 15000"> <!--Здесь будет ползунок -->
-							<script type="text/javascript">
-								
-							</script>
-						</div>
-						<div class="count-parameters">
-							<label for="count-from">От</label>
-							<input class="filter-count" id="count-from" type="text" name="from" placeholder="0">
 
-							<label for="count-to">До</label>
-							<input class="filter-count" id="count-to" type="text" name="to" placeholder="15 000">
-						</div>	
-					</fieldset>	
+					<fieldset class="filter-item">
+				        <legend>Стоимость:</legend>
+				        <div class="range-filter">
+				          <div class="range-controls">
+				            <div class="scale">
+				              <div class="bar"></div>
+				            </div>
+				            <div class="toggle toggle-min"></div>
+				            <div class="toggle toggle-max"></div>
+				          </div>
+				          <!--Здесь будет оживление ползунка 
+							<!--<script type="text/javascript">
+							</script>-->
+				          <div class="price-controls">
+				            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+				            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+				          </div>
+				        </div>
+				     </fieldset>
 
-					<fieldset>
+
+					<fieldset class="filter-item">
 						<legend>Сетка:</legend>
 							 <ul class="filter-list">
 								<li class="filter-option">
@@ -72,7 +78,7 @@
 							</ul>
 					</fieldset>	
 
-					<fieldset>
+					<fieldset class="filter-item">
 						<legend>Особенности:</legend>
 						<ul class="filter-list">
 							<li>
