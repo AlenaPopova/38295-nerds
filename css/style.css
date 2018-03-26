@@ -22,7 +22,7 @@ a {
 .button {
 	display: block;
 	width: 240px;
-	padding: 13px 0;
+	padding: 15px 0;
 
 	font-size: inherit;
 	line-height: 18px;
@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-	width: 1160px;
+	width: 1120px;
 	margin: 0 auto;
 	padding: 0 20px; /**добавлены паддинги чтобы при меньшей ширине*/
 	 					/* экрана, страница не прилипала к краям*/
@@ -435,7 +435,7 @@ li.button-services {
 
 .about-us {
 	border-top: 2px solid #eeeeee;
-	padding-top: 80px;
+	padding-top: 40px;
 
 	
 	border-bottom: 2px solid #eeeeee;
@@ -450,6 +450,9 @@ li.button-services {
 .containter-about-us{
 	flex-direction: column;
 	width: 660px;
+	padding-top: 40px;
+	 background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 }
 
@@ -484,17 +487,32 @@ p.we-are {
 	padding: 0;
 	font-size: 16px;
 	line-height: 24px;
-	
-	
-	margin-left: 20px;
+	list-style: none;
+	/*margin-left: 35px;*/
 }
 
 .list-orders li {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 25px;
+	padding-left: 35px;
+	
+	position: relative;
 }
 
+.list-orders li::before {
+	content: "";
+	
+	position: absolute;
+	top: 10px;
+	left: 0;
+	
+	width: 25px;
+	height:2px;
+	
+	background-color: #fb565a;
+	
+}
 
 
 /*Статистика*/
@@ -554,13 +572,11 @@ p.we-are {
 
 .container-partners {
 	padding-bottom: 44px;
-	padding-top: 77px;
+	padding-top: 46px;
 	width: 1160px;
 	margin: 0 auto;
 	border-bottom: 2px solid #eeeeee;
-
 	
-
 }
 
 .partners-list {
@@ -592,8 +608,13 @@ p.we-are {
 .map {
 	position: relative;
 	margin: 0;
-	margin-bottom: 180px;
+	margin-bottom: 69px;
 	margin-top: 80px;
+	padding-bottom: 55px;
+	overflow: hidden;
+	
+	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
 .map img {
@@ -602,30 +623,28 @@ p.we-are {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	/*padding-bottom: 69px;*/
 	
   	z-index: -1;
   
 }
 
+.map-container {
+	width: 730px;
+	margin-top: 55px;
+	
+}
 
 .our-contacts {
 	display: inline-block;
 	width: 319px;
 	text-align: center;
-	margin-left:-140px;
+	margin-left:-180px;
 	/*padding-left: 20px;*/
-	
-	position: relative;
-	/*position: absolute;*/
 
-	top: 54px;
-	left: 40px;
-	
-	background-color: #fff;
-
-	
+	background-color: #fff;	
 }
+
+
 
 .name-of-studio {
 	margin: 0;
@@ -805,7 +824,7 @@ legend {
   padding: 0;
   padding-bottom: 55px;
   border: none;
-
+	
   	/*background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
  	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
@@ -813,7 +832,10 @@ legend {
 /*Фильтр: Стоимость*/
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 50px;
+  	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  
 }
 
 
@@ -1054,6 +1076,16 @@ button.filter-button:active { /*задает прозрачность текст
 	width: 760px;
 }
 
+.sorting { 	
+	display: flex;
+	
+	margin: 0 auto;
+	justify-content: space-between;
+	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	
+}
+
 .sorting p {
 	text-transform: uppercase;
 	font-size: 18px;
@@ -1068,12 +1100,7 @@ button.filter-button:active { /*задает прозрачность текст
 	/*margin-right:265px; */
 }
 
-.sorting { 	
-	display: flex;
-	
-	margin: 0 auto;
-	justify-content: space-between;
-}
+
 
 .sorting-list {
 	list-style: none;
@@ -1120,8 +1147,10 @@ button.filter-button:active { /*задает прозрачность текст
 	
 	width: 11px;
 	height: 10px;
+	
 	top: 10px;
 	right: 0px;
+	
 	opacity: 0.2;
 	
 	background-image: url("../img/icon-dir-up.svg"); 
@@ -1135,7 +1164,7 @@ button.filter-button:active { /*задает прозрачность текст
 	width: 60px;
 	padding-right: 18px;
 	margin: 0;
-	flex-grow: 1;
+	
 	/*margin-left: 45px;*/
 
 	/*background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
@@ -1222,20 +1251,66 @@ button.filter-button:active { /*задает прозрачность текст
 	padding: 0;
 	margin-bottom: 33px;
 	
-	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-	
 }
+
 
 .catalog-item-image img{
 	margin: 0;
 	padding: 0;
 	position: relative;
 	padding-top: 35px;
+		
+}
+
+.catalog-item-image {
+	position: relative;
+}
+
+.item-active {
+	display: inline-block;
+	text-align: center;
+	/*padding: 0 80px;*/
+
+}
+
+.item-active {
+	content: "";
+	position: absolute;
+	bottom: 6px;
 	
-	background: rgba(166, 166, 166, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	background-color: #eeeeee;
+	width: 100%;
+	height: 230px;
+
+	z-index: 1;	
+	display:none;
+}
+
+
+.name-item {
+	font: inherit;
+	display: block;
+	margin-top: 35px;
+	color: black;
+	font-weight: bold;
+}
+
+.item-active p {
+	color: #666666;
+	padding: 0 60px;
+}
+
+.catalog-button {
+	margin: 0 80px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 200px;
 	
+}
+
+
+.catalog-item-image:hover .item-active{
+	display: block;
 }
 
 .browser-image::before {
@@ -1377,28 +1452,38 @@ button.filter-button:active { /*задает прозрачность текст
 
 }
 
+.user-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 100px;
+	
+	background: rgba(225, 225, 5, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	
+}
 
 .user-form p {
 	margin: 0;
 	padding: 0;
 	/*margin: 0 100px;*/
 	margin-bottom: 36px;
-
+	width: 50%;
 	
 }
 
 .user-form label{
+	display: block;
 	line-height: 18px;
 	font-weight: bold;
 	margin-bottom: 11px;
 }
 
-.user-form {
-	display: flex;
-	flex-wrap: wrap;
+.user-form textarea { 
+	width: 760px;
 
+	
 }
-
 .send-letter {
 	margin: 0;
 	margin-left: 100px;
@@ -1406,27 +1491,24 @@ button.filter-button:active { /*задает прозрачность текст
 	width: 260px;
 }
 
+
 .user-form input[type="text"],
 .user-form input[type="email"] {
 	width: 360px;
-	margin-right: 20px;
+	
 
-	background: rgba(66, 66, 231, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(66, 66, 231, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
-.user-form textarea { 
-	width: 760px;
 
-	background: rgba(225, 225, 5, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
 
 .user-form input[type="text"],
 .user-form input[type="email"],
 .user-form textarea {
 	box-sizing: border-box;
 	padding: 10px 15px;
+	
 	
 	font:inherit;
 	line-height:18px;
@@ -1435,8 +1517,6 @@ button.filter-button:active { /*задает прозрачность текст
 	border-radius: 3px;
 
 }
-
-
 
 
 .user-form input:hover,
@@ -1486,5 +1566,5 @@ button.filter-button:active { /*задает прозрачность текст
 }
 
 .modal-write-us {
-	/*display: none;*/
+	display: none;
 }

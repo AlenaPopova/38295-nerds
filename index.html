@@ -199,19 +199,17 @@
 	<section class="modal modal-write-us">
 		<h1>Напишите нам</h1> 
 		<form class="user-form" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<div>
-					<label for="user-name">Ваше имя:</label>
-					<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
-				</div>
+			<p class="user-info">
+				<label for="user-name">Ваше имя:</label>
+				<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
 			</p>
-			<p>
+			<p class="user-info">
 				<label for="user-email">Ваш e-mail:</label>
 				<input id="user-email" type="email" name="your-email" value="" placeholder="email@example.com">
 			</p>
 			<p>
 				<label for="user-letter">Текст письма:</label>
-				<textarea id="user-letter" name="your-letter" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+				<textarea id="user-letter" name="your-letter" rows="5" cols="100" placeholder="В свободной форме"></textarea>
 			</p>
 			<button class="button send-letter" type="submit" value="Отправить">Отправить</button>
 		</form>
