@@ -96,8 +96,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
+	width: 1160px;
 	display: flex;
 	align-items: center;
+
+	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .site-navigation { 						
@@ -302,12 +306,10 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	margin:0;
 	padding:0;
-	margin-bottom: 160px;
+	margin-bottom: 80px;
 	
 	display: flex;
 
-	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования 
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
 .service-item h3 {
@@ -391,8 +393,6 @@ input[type="radio"].visually-hidden {
 li.button-services {
 	display: block; 
 
-	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .service-site .button {
@@ -432,8 +432,11 @@ li.button-services {
 /*О нас*/ 
 
 .about-us {
+	border-top: 2px solid #eeeeee;
 	padding-top: 80px;
+
 	
+	border-bottom: 2px solid #eeeeee;
 }
 
 .container-info {
@@ -445,6 +448,7 @@ li.button-services {
 .containter-about-us{
 	flex-direction: column;
 	width: 660px;
+
 }
 
 
@@ -496,6 +500,9 @@ p.we-are {
 	flex-direction: column;
 	width: 360px;
 
+	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
 	
 }
 
@@ -509,6 +516,9 @@ p.we-are {
 	margin-top: 41px;
 	margin-left: 15px;
 	margin-bottom: 50px;
+
+	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .statistic-list { 
@@ -541,10 +551,13 @@ p.we-are {
 /*Партнеры*/
 
 .container-partners {
-	padding-bottom: 125px;
+	padding-bottom: 44px;
 	padding-top: 77px;
 	width: 1160px;
 	margin: 0 auto;
+	border-bottom: 2px solid #eeeeee;
+
+	
 
 }
 
@@ -577,17 +590,20 @@ p.we-are {
 .map {
 	position: relative;
 	margin: 0;
-	margin-bottom: 69px;
-
-	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	margin-bottom: 180px;
+	margin-top: 80px;
 }
 
 .map img {
+	position: absolute;
+
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	/*padding-bottom: 69px;*/
 	
+  	z-index: -1;
+  
 }
 
 
@@ -595,16 +611,18 @@ p.we-are {
 	display: inline-block;
 	width: 319px;
 	text-align: center;
-	margin-left:20px;
+	margin-left:-140px;
+	/*padding-left: 20px;*/
+	
+	position: relative;
+	/*position: absolute;*/
 
-	position: absolute;
 	top: 54px;
-	left:120px;
+	left: 40px;
 	
 	background-color: #fff;
 
-	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	
 }
 
 .name-of-studio {
@@ -625,13 +643,14 @@ p.we-are {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
+
 
 .button-contacts {
 	display: block;
-	width: 210px;
-	margin: auto;
+	width: 220px;
+	margin: 35px auto;
 	margin-bottom: 47px;
 
 }
@@ -640,9 +659,18 @@ p.we-are {
 /*Соц.сети*/
 
 .footer-container {
+	margin: 0;
+	padding: 0 20px;
+	margin-left: 140px;
+
+	align-items: center;
+	width: 960px;
+
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+
+	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 }
 
@@ -651,12 +679,13 @@ p.we-are {
 }
 
 .footer-social{
-	width: 300px;
 	padding: 0;
+	width: 300px;
 
 	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
  	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
+
 
 .social-button-list {
 	padding: 0;
@@ -692,16 +721,16 @@ p.we-are {
 }
 
 .be-friend {
+	
 	width: 560px;
-	margin-left: 139px;
-	margin-right: 340px;
-	vertical-align: center;
 
-	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+	
 }
 
 .friend {
+
 	font-size: 36px;
 	line-height: 36px;
 	font-weight:bold;
@@ -929,7 +958,7 @@ legend {
 	width: 25px;
 	height: 25px;
 	
-	opacity: 0.3;
+	opacity: 0.4;
 
 	background-image: url("../img/icon-radio-off.svg"); 
 	background-repeat: no-repeat;
@@ -937,7 +966,7 @@ legend {
 	
 }
 
-.filter-grid-radio:checked + label::after {
+.filter-grid-radio:checked + label::before {
 	content: "";
 	position: absolute;
 	left: -35px;
@@ -946,7 +975,7 @@ legend {
 	width: 25px;
 	height: 25px;
 	
-	opacity: 0.3;
+	opacity: 0.4;
 	
 	background-image: url("../img/icon-radio-on.svg"); 
 	background-repeat: no-repeat;
@@ -969,23 +998,6 @@ legend {
 	padding-top: 18px;
 }
 
-/*label:before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #ff0000;
-  box-sizing: border-box;
-}*/
-
-
-input:focus + label:before,
-label:hover:before {
- opacity: 1;
-}
-
 
 /*Фильтр: Особенности*/
 .input-filter-checkbox + label::before {
@@ -997,7 +1009,7 @@ label:hover:before {
 	width: 25px;
 	height: 25px;
 	
-	opacity: 0.3;
+	opacity: 0.4;
 
 	background-image: url("../img/icon-checkbox-off.svg"); 
 	background-repeat: no-repeat;
@@ -1013,17 +1025,18 @@ label:hover:before {
 	width: 25px;
 	height: 25px;
 	
-	opacity: 0.3;
+	opacity: 0.4;
 
 	background-image: url("../img/icon-checkbox-on.svg"); 
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
-input:focus + label:before,
-label:hover:before {
- 	opacity: 1;
- 	border-color: black;
+.filter-grid-radio + label:hover:before,
+.filter-grid-radio:checked + label:hover:before,
+.input-filter-checkbox + label:hover:before,
+.input-filter-checkbox:checked + label:hover:before {
+ 	opacity: 1;	
 }
 
 }
@@ -1107,6 +1120,10 @@ button.filter-button:active { /*задает прозрачность текст
 	
 }
 
+.sorting-by {
+	flex-grow: 1;
+}
+
 .sorting-up-down  {
 	position: relative;
 
@@ -1135,11 +1152,14 @@ button.filter-button:active { /*задает прозрачность текст
 	height: 10px;
 	top: 10px;
 	right: 0px;
+	opacity: 0.2;
 	
 	background-image: url("../img/icon-dir-up.svg"); 
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+
 
 .sorting-up-down li {
 	width: 60px;
@@ -1173,13 +1193,13 @@ button.filter-button:active { /*задает прозрачность текст
 	color: #b8b8b8;
 }
 
-.sorting-list a:hover,
-.sorting-list a:focus {
+.sorting-link a:hover,
+.sorting-link a:focus {
 	color: black;
 	opacity:0.6;
 }
 
-.sorting-list a:active {
+.sorting-link a:active {
 	color: black;
 	opacity: 1;
 }
@@ -1194,6 +1214,17 @@ button.filter-button:active { /*задает прозрачность текст
 	opacity: 1;
 }
 
+.up:hover::before {
+	opacity: 1;
+}
+
+.down:hover::before {
+	opacity: 0.6;
+}
+
+.down:active::before {
+	opacity: 1;
+}
 
 /*Каталог*/
 
