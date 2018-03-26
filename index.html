@@ -196,12 +196,14 @@
 		</div>
 	</footer>
 
-	<section class="write-us">
+	<section class="modal modal-write-us">
 		<h1>Напишите нам</h1> 
 		<form class="user-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
-				<label for="user-name">Ваше имя:</label>
-				<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
+				<div>
+					<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
+				</div>
 			</p>
 			<p>
 				<label for="user-email">Ваш e-mail:</label>
@@ -213,7 +215,7 @@
 			</p>
 			<button class="button send-letter" type="submit" value="Отправить">Отправить</button>
 		</form>
-		<button  class="modal-close" type="button" aria-label="Закрыть форму"> Закрыть</button>
+		<button  class="modal-close" type="button" aria-label="Закрыть форму">Закрыть</button>
 	</section>
 </body>
 </html>

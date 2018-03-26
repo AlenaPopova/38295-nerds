@@ -235,10 +235,10 @@
 			<div class="container map-container">
 				<h2 class="visially-hidden">Наш адрес</h2><!--в последствии необходимо скрыть -->
 				<div class="our-contacts">
-					<p class="name-of-studio">Nerds disign studio</p>
+					<p class="name-of-studio">Nёrds disign studio</p>
 						<p class="adress">191186, Санкт-Петербург, <br>
-						ул. Конюшенная, д. 19/8 <br>
-						тел. +7(812)275-75-75</p>
+						ул. Конюшенная, д. 19/8 </p>
+						<p class="adress our-phone"> тел. +7(812)275-75-75</p>
 					<a class="button button-contacts" href="contacts.html">Напишите нам</a>
 				</div>	
 			</div>
@@ -277,12 +277,14 @@
 		</div>
 	</footer>
 
-	<section class="write-us">
+	<section class="modal modal-write-us">
 		<h1>Напишите нам</h1> 
 		<form class="user-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
-				<label for="user-name">Ваше имя:</label>
-				<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
+				<div>
+					<label for="user-name">Ваше имя: </label>
+					<input id="user-name" type="text" name="yourname" value="" placeholder="Имя Фамилия">
+				</div>
 			</p>
 			<p>
 				<label for="user-email">Ваш e-mail:</label>
@@ -294,7 +296,7 @@
 			</p>
 			<button class="button send-letter" type="submit" value="Отправить">Отправить</button>
 		</form>
-		<button  class="modal-close" type="button" aria-label="Закрыть форму"> Закрыть</button>
+		<button  class="modal-close" type="button" aria-label="Закрыть форму">Закрыть</button>
 	</section>
 
 </body>

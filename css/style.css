@@ -37,6 +37,8 @@ a {
 	background-color: #fb565a;
 	
 	align-self: flex-start;
+
+	cursor: pointer;
 }
 	
 .button:hover,
@@ -660,17 +662,18 @@ p.we-are {
 
 .footer-container {
 	margin: 0;
-	padding: 0 20px;
+	
 	margin-left: 140px;
+	margin-bottom: 70px;
 
 	align-items: center;
-	width: 960px;
+	width: 1000px;
 
 	display: flex;
 	justify-content: space-between;
 
-	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
- 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 }
 
@@ -721,11 +724,13 @@ p.we-are {
 }
 
 .be-friend {
-	
-	width: 560px;
+	width: 630px;
+	margin-left: 130px;
+	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+}
 
-	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+.be-friend p {
 	
 }
 
@@ -736,6 +741,7 @@ p.we-are {
 	font-weight:bold;
 	color: black;
 	margin: 0;
+	padding-bottom: 8px;
 }
 
 .discont {
@@ -743,42 +749,6 @@ p.we-are {
 }
 
 
-/*Напишите нам*/
-
-.user-form label{
-	line-height:18px;
-	font-weight: bold;
-}
-
-.write-us h1 {
-	font-size: 42px
-	line-height: 42px;
-	font-weight:bold;
-	color: black;
-}
-
-.user-form input[type="text"],
-.user-form input[type="email"],
-.user-form textarea {
-	font:inherit;
-	line-height:18px;
-	color: #444444;
-	border: 2px solid #d7dcde;
-}
-
-.user-form input:hover,
-.user-form textarea:hover {
-	border-color: 2px solid #b4b9bb;
-}
-
-.user-form input:focus 
-.user-form textarea:focus {
-	border-color: 2px solid black;
-}
-
-.user-form input:invalid {
-	border-color: 2px solid red;
-}
 
 
 /*МАГАЗИН*/
@@ -1371,4 +1341,150 @@ button.filter-button:active { /*задает прозрачность текст
 }
 
 
+/*Модальное окно "Напишите нам"*/
 
+.modal {
+	position: fixed;
+	color: black;
+	background-color: #ffffff;
+	box-shadow: 0 14px 28px 2px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	z-index: 1;	
+}
+
+
+.modal-write-us {
+	width: 960px;
+
+	margin-left: -350px;
+	padding-top: 73px;
+
+	top: 120px;
+	left: 50%;
+
+}
+
+
+.modal-write-us h1 {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+
+	font-size: 45px;
+	line-height: 45px;
+	color: black;
+	
+	padding-bottom: 35px;
+
+}
+
+
+.user-form p {
+	margin: 0;
+	padding: 0;
+	/*margin: 0 100px;*/
+	margin-bottom: 36px;
+
+	
+}
+
+.user-form label{
+	line-height: 18px;
+	font-weight: bold;
+	margin-bottom: 11px;
+}
+
+.user-form {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.send-letter {
+	margin: 0;
+	margin-left: 100px;
+	margin-bottom: 84px;
+	width: 260px;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"] {
+	width: 360px;
+	margin-right: 20px;
+
+	background: rgba(66, 66, 231, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.user-form textarea { 
+	width: 760px;
+
+	background: rgba(225, 225, 5, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form textarea {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	
+	font:inherit;
+	line-height:18px;
+	color: #444444;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+
+}
+
+
+
+
+.user-form input:hover,
+.user-form textarea:hover {
+	border-color: 2px solid #b4b9bb;
+}
+
+.user-form input:focus 
+.user-form textarea:focus {
+	border-color: 2px solid black;
+}
+
+.user-form input:invalid {
+	border-color: 2px solid red;
+}
+
+
+.modal-close {
+	position: absolute;
+
+	top: 79px;
+	right: 90px;
+
+	width: 25px;
+	height: 25px;
+
+	font-size: 0;
+
+	background-color: transparent;
+
+	opacity: 0.3;
+	background-image: url("../img/icon-close-cross.svg");
+  	background-position: 0 0;
+  	background-repeat: no-repeat;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.modal-close:hover {
+	opacity: 1;
+}
+
+.modal-close:active {
+	opacity: 0.1;
+	border: 0; /*ОТКУДА БЕРЕТСЯ РАМКА???*/
+}
+
+.modal-write-us {
+	/*display: none;*/
+}
