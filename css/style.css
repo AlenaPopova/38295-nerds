@@ -79,7 +79,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 	padding-top: 49px;
-	padding-bottom: 35px; 
+	/*padding-bottom: 35px; */
 	background-color: #eeeeee;
 }
 
@@ -102,18 +102,20 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	align-items: center;
 
-	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
-.site-navigation { 						
+.site-navigation { 	
+	padding: 0;					
 	list-style: none;
-	width: 660px;
+	width: 680px;
 	margin-left: 202px;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+
 }
 
 .site-navigation li{
@@ -123,9 +125,9 @@ input[type="radio"].visually-hidden {
 }
 
 .cart-navigation{
+
 	max-width: 160px;
 	justify-content: flex-end;
-	
 }
 
 .cart-navigation .cart-link {
@@ -167,10 +169,13 @@ input[type="radio"].visually-hidden {
 	opacity:0.3;
 }	
 
-/*.site-navigation a:visited { ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ
+
+a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
+	
+	text-decoration-color: #fb565a;
 	text-decoration: underline;
-	/*text-decoration-color: #fb565a;
-}*/
+
+}
 
 .main-header-logo:hover img,
 .main-header-logo:focus img {
@@ -190,15 +195,15 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;	
 	margin: 0px;
 	margin-bottom: 80px;
-	
+
 }
 
 .slider-switches {
 	position: absolute;
 
-  	left: 50%;
+  	left: 53%;
   	bottom: 104px;
-  	z-index: 100;
+  	z-index: 1;
   
   	width: 160px;
   	height: 18px;
@@ -206,6 +211,7 @@ input[type="radio"].visually-hidden {
  	text-align: center;
   	font-size: 0;
   	transform: translateX(-50%);
+
 }
 
 .slider-switches i {
@@ -218,6 +224,7 @@ input[type="radio"].visually-hidden {
 	padding: 8px;
 
   	cursor: pointer;	
+
 }
 
 .slider-switches i::after {
@@ -257,21 +264,31 @@ input[type="radio"].visually-hidden {
 
 	margin: 0;
 	padding: 0;
+
 }
 
 .slider-item {
 	display: none;
-	padding: 78px 0 80px 0;
+
+	width: 1160px;
+	margin: 0;
+	padding: 70px 0 87px 0;
+
+	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+
 }
 
 .slider-item:nth-child(1) {
 	display: block;
+
 }
 
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide1.png");
   	background-repeat: no-repeat;
   	background-position: 93% 18px;
+
 }
 
 .slider-item:nth-child(2) {
@@ -291,9 +308,13 @@ input[type="radio"].visually-hidden {
 	line-height: 55px;
 	font-weight: 500px;
 
-	max-width: 600px;
+	max-width: 400px;
   	margin: 0;
   	margin-bottom: 27px;
+
+
+  	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
 .slider-item p{
@@ -309,8 +330,12 @@ input[type="radio"].visually-hidden {
 	margin:0;
 	padding:0;
 	margin-bottom: 80px;
+	width: 1160px;
 	
 	display: flex;
+
+	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования*/ 
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 }
 
@@ -451,8 +476,9 @@ li.button-services {
 	flex-direction: column;
 	width: 660px;
 	padding-top: 40px;
-	 background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+
+	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 }
 
@@ -520,8 +546,8 @@ p.we-are {
 	flex-direction: column;
 	width: 360px;
 
-	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 
 	
 }
@@ -537,8 +563,8 @@ p.we-are {
 	margin-left: 15px;
 	margin-bottom: 50px;
 
-	background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
 .statistic-list { 
@@ -571,25 +597,36 @@ p.we-are {
 /*Партнеры*/
 
 .container-partners {
-	padding-bottom: 44px;
-	padding-top: 46px;
-	width: 1160px;
 	margin: 0 auto;
+	padding-bottom: 50px;
+	padding-top: 46px;
+	width: 1120px;
+	
 	border-bottom: 2px solid #eeeeee;
+
+	
 	
 }
 
 .partners-list {
 	list-style: none;
 	
-	margin: 0;
-	padding: 0;
-	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	
 }
 
+.partners-list li {
+	border-right: 2px solid #eeeeee;
+	height: 55px;
+	padding-right: 48px;
+	
+}
+
+.partners-list li:last-child {
+	border-right: none;
+}
 
 .partner-item img {
 	opacity: 0.3;
@@ -680,9 +717,9 @@ p.we-are {
 /*Соц.сети*/
 
 .footer-container {
-	margin: 0;
 	
-	margin-left: 140px;
+	margin: 0 auto;
+	/*margin-left: 140px;*/
 	margin-bottom: 70px;
 
 	align-items: center;
@@ -704,8 +741,9 @@ p.we-are {
 	padding: 0;
 	width: 300px;
 
-	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
- 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+
+	background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
+ 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 
@@ -771,10 +809,13 @@ p.we-are {
 
 
 /*МАГАЗИН*/
+
 h1.page-title {
 	margin:0;
 	padding:0;
 	padding-bottom: 116px;
+	padding-top: 95px;
+	
 
 	font-size: 55px;
 	line-height: 55px;
@@ -782,7 +823,18 @@ h1.page-title {
 	
 	/*margin-bottom: 175px;*/
 	background-color: #eeeeee;	
+
+	
 }
+
+.catalog-container {
+	
+	display:flex;
+	justify-content: space-between;
+	padding-top: 60px;
+
+}
+
 
 /*Фильтры*/
 
@@ -833,11 +885,8 @@ legend {
 .range-filter {
   width: 260px;
   margin-top: 50px;
-  	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   
 }
-
 
 .range-controls {
   position: relative;
@@ -1031,9 +1080,8 @@ legend {
  	opacity: 1;	
 }
 
-}
 
-.button .filter-button {
+.filter-button {
 	margin: 0;
 	padding:0;
 	
@@ -1081,8 +1129,9 @@ button.filter-button:active { /*задает прозрачность текст
 	
 	margin: 0 auto;
 	justify-content: space-between;
-	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+	/*background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 	
 }
 
@@ -1110,10 +1159,10 @@ button.filter-button:active { /*задает прозрачность текст
 
 	padding: 0;
 	margin: 0;
-	width: 560px;
+	width: 580px;
 	
-	background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(66, 231, 93, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 	
 }
 
@@ -1123,6 +1172,7 @@ button.filter-button:active { /*задает прозрачность текст
 
 .sorting-up-down  {
 	position: relative;
+	width: 50px;
 
 }
 
@@ -1190,6 +1240,8 @@ button.filter-button:active { /*задает прозрачность текст
 
 .sorting-list a{
 	color: #b8b8b8;
+	padding-right: 20px;
+
 }
 
 .sorting-link a:hover,
@@ -1227,18 +1279,12 @@ button.filter-button:active { /*задает прозрачность текст
 
 /*Каталог*/
 
-.catalog-container {
-	display:flex;
-	justify-content: space-between;
-	padding-top: 60px;
-}
-
 .catalog-list{
 	list-style: none;
 	margin:0;
 	padding: 0;
 	
-	margin-top: 55px; 
+	margin-top: 40px; 
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
@@ -1418,6 +1464,46 @@ button.filter-button:active { /*задает прозрачность текст
 
 /*Модальное окно "Напишите нам"*/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
 	position: fixed;
 	color: black;
@@ -1426,12 +1512,24 @@ button.filter-button:active { /*задает прозрачность текст
 	z-index: 1;	
 }
 
+.modal-write-us {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
+}
+
 
 .modal-write-us {
 	width: 960px;
 
 	margin-left: -350px;
-	padding-top: 73px;
 
 	top: 120px;
 	left: 50%;
@@ -1443,6 +1541,7 @@ button.filter-button:active { /*задает прозрачность текст
 	margin: 0;
 	padding: 0;
 	padding-left: 100px;
+	padding-top: 73px;
 
 	font-size: 45px;
 	line-height: 45px;
@@ -1457,9 +1556,10 @@ button.filter-button:active { /*задает прозрачность текст
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 100px;
+	margin-bottom: 84px;
 	
-	background: rgba(225, 225, 5, 0.2); /*временно для позиционирования */
- 	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	/*background: rgba(225, 225, 5, 0.2); /*временно для позиционирования */
+ 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 	
 }
 
@@ -1468,7 +1568,7 @@ button.filter-button:active { /*задает прозрачность текст
 	padding: 0;
 	/*margin: 0 100px;*/
 	margin-bottom: 36px;
-	width: 50%;
+	
 	
 }
 
@@ -1481,14 +1581,13 @@ button.filter-button:active { /*задает прозрачность текст
 
 .user-form textarea { 
 	width: 760px;
-
-	
 }
+
 .send-letter {
-	margin: 0;
+	/*margin: 0;
 	margin-left: 100px;
 	margin-bottom: 84px;
-	width: 260px;
+	width: 260px;*/
 }
 
 
@@ -1508,7 +1607,6 @@ button.filter-button:active { /*задает прозрачность текст
 .user-form textarea {
 	box-sizing: border-box;
 	padding: 10px 15px;
-	
 	
 	font:inherit;
 	line-height:18px;
@@ -1537,7 +1635,7 @@ button.filter-button:active { /*задает прозрачность текст
 .modal-close {
 	position: absolute;
 
-	top: 79px;
+	top: 78px;
 	right: 90px;
 
 	width: 25px;
@@ -1562,9 +1660,7 @@ button.filter-button:active { /*задает прозрачность текст
 
 .modal-close:active {
 	opacity: 0.1;
-	border: 0; /*ОТКУДА БЕРЕТСЯ РАМКА???*/
+	border: none; /*ОТКУДА БЕРЕТСЯ РАМКА???*/
 }
 
-.modal-write-us {
-	display: none;
-}
+
