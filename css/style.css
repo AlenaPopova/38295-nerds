@@ -48,11 +48,12 @@ a {
 
 .button:active {
 	background-color:#d7373b;
+	color: rgba(255,255,255,0.3); 
 }
 
-a.button:active {  /*задает прозрачность тексту на кнопке*/
-	color: rgba(255,255,255,0.3);  
-}
+/*a.button:active {  /*задает прозрачность тексту на кнопке*/
+	/*color: rgba(255,255,255,0.3);  
+}*/
 
 
 .visially-hidden,
@@ -223,6 +224,7 @@ a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
 	border-radius: 50%;
 	padding: 8px;
 
+	vertical-align: center;
   	cursor: pointer;	
 
 }
@@ -666,7 +668,7 @@ p.we-are {
 }
 
 .map-container {
-	width: 730px;
+	/*width: 730px;*/
 	margin-top: 55px;
 	
 }
@@ -674,13 +676,11 @@ p.we-are {
 .our-contacts {
 	display: inline-block;
 	width: 319px;
+	vertical-align: center;
 	text-align: center;
-	margin-left:-180px;
-	/*padding-left: 20px;*/
 
 	background-color: #fff;	
 }
-
 
 
 .name-of-studio {
@@ -932,11 +932,11 @@ legend {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+	left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+	left: 160px;
 }
 
 .price-controls {
@@ -946,6 +946,7 @@ legend {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: center;
   
   font-size: 16px;
   text-transform: uppercase;
@@ -1073,10 +1074,10 @@ legend {
 	background-position: 0 0;
 }
 
-.filter-grid-radio + label:hover:before,
-.filter-grid-radio:checked + label:hover:before,
-.input-filter-checkbox + label:hover:before,
-.input-filter-checkbox:checked + label:hover:before {
+.filter-grid-radio + label:hover::before,
+.filter-grid-radio:checked + label:hover::before,
+.input-filter-checkbox + label:hover::before,
+.input-filter-checkbox:checked + label:hover::before {
  	opacity: 1;	
 }
 
@@ -1315,6 +1316,7 @@ button.filter-button:active { /*задает прозрачность текст
 .item-active {
 	display: inline-block;
 	text-align: center;
+	vertical-align: center;
 	/*padding: 0 80px;*/
 
 }
@@ -1509,7 +1511,7 @@ button.filter-button:active { /*задает прозрачность текст
 	color: black;
 	background-color: #ffffff;
 	box-shadow: 0 14px 28px 2px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	z-index: 1;	
+	z-index: 1;
 }
 
 .modal-write-us {
@@ -1528,11 +1530,9 @@ button.filter-button:active { /*задает прозрачность текст
 
 .modal-write-us {
 	width: 960px;
-
-	margin-left: -350px;
-
-	top: 120px;
+	top: 50%;
 	left: 50%;
+	transform: translate (-50%, -50%);
 
 }
 
