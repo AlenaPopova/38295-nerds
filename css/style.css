@@ -10,7 +10,7 @@ body {
 }
 
 header {
-	/*background-color: #eeeeee;*/
+	min-width: 1200px;
 }
 
 /*Общие свойства*/
@@ -153,6 +153,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .cart-navigation a {
 	color: black;
+	font-weight:bold;
 }
 
 .site-navigation a:hover,
@@ -168,11 +169,6 @@ input[type="radio"].visually-hidden {
 	opacity:0.3;
 }
 
-a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
-	text-decoration-color: #fb565a;
-	text-decoration: underline;
-}
-
 .main-header-logo:hover img,
 .main-header-logo:focus img {
 	opacity: 0.8;
@@ -186,15 +182,14 @@ a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
 
 .slider {
 	position: relative;
-
 	background-color: #eeeeee;
 	margin: 0px;
 	margin-bottom: 80px;
+	min-width: 1200px;
 }
 
 .slider-switches {
 	position: absolute;
-
 	left: 53%;
 	bottom: 104px;
 	z-index: 1;
@@ -209,7 +204,6 @@ a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
 
 .slider-switches label {
 	position: relative;
-
 	display: inline-block;
 	width: 18px;
 	height: 18px;
@@ -217,13 +211,12 @@ a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
 
 	vertical-align: center;
 	border-radius: 50%;
-	cursor: pointer;	
+	cursor: pointer;
 
 }
 
 .slider-switches label::after {
 	content: "";
-
 	position: absolute;
 	top: 8px;
 	left: 8px;
@@ -278,7 +271,7 @@ a:visited { 	/*ДЛЯ АКТИВНОГО ПУНКТА МЕНЮ*/
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide1.png");
 	background-repeat: no-repeat;
-	background-position: 93% 18px;
+	background-position: 91% 18px;
 }
 
 .slider-item:nth-child(2) {
@@ -636,7 +629,7 @@ p.we-are {
 	margin-top: 80px;
 	padding-bottom: 55px;
 	overflow: hidden;
-
+	min-width: 1200px;
 	/*background: rgba(6, 6, 6, 0.2); /*временно для позиционирования */
 	/*box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
@@ -644,8 +637,7 @@ p.we-are {
 .map img {
 	position: absolute;
 	z-index: -1;
-	
-	min-width: 1160px;
+
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -699,9 +691,8 @@ p.we-are {
 .footer-container {
 	margin: 0 auto;
 	margin-bottom: 70px;
-
 	align-items: center;
-	width: 1000px;
+	width: 1200px;
 
 	display: flex;
 	justify-content: space-between;
@@ -778,14 +769,15 @@ p.we-are {
 h1.page-title {
 	margin:0;
 	padding:0;
-	padding-bottom: 116px;
-	padding-top: 95px;
+	padding-bottom: 110px;
+	padding-top: 80px;
 
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
 
 	background-color: #eeeeee;
+	min-width: 1200px;
 }
 
 .catalog-container {
