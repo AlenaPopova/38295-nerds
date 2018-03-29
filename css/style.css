@@ -88,7 +88,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-	width: 1120px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px; /**добавлены паддинги чтобы при меньшей ширине*/
 	 					/* экрана, страница не прилипала к краям*/
@@ -271,7 +271,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide1.png");
 	background-repeat: no-repeat;
-	background-position: 91% 18px;
+	background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
@@ -340,7 +340,7 @@ input[type="radio"].visually-hidden {
 	margin:0;
 	padding:0;
 	margin-bottom: 80px;
-	width: 1160px;
+	width: 1200px;
 
 	display: flex;
 
@@ -464,13 +464,13 @@ li.button-services {
 .about-us {
 	border-top: 2px solid #eeeeee;
 	padding-top: 40px;
-	border-bottom: 2px solid #eeeeee;
 }
 
 .container-info {
 	display:flex;
 	justify-content: space-between;
 	margin-bottom: 54px;
+	width: 1160px;
 }
 
 .containter-about-us{
@@ -587,8 +587,8 @@ p.we-are {
 	margin: 0 auto;
 	padding-bottom: 50px;
 	padding-top: 46px;
-	width: 1120px;
-
+	width: 1160px;
+	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
 }
 
@@ -622,6 +622,10 @@ p.we-are {
 }
 
 /*Подвал*/
+.main-footer {
+	min-width: 1200px;
+}
+
 .map {
 	position: relative;
 	margin: 0;
@@ -692,7 +696,7 @@ p.we-are {
 	margin: 0 auto;
 	margin-bottom: 70px;
 	align-items: center;
-	width: 1200px;
+	width: 1160px;
 
 	display: flex;
 	justify-content: space-between;
@@ -744,7 +748,7 @@ p.we-are {
 }
 
 .be-friend {
-	width: 630px;
+	width: 730px;
 	margin-left: 130px;
 
 	/*background: rgba(210, 25, 25, 0.2); /*временно для позиционирования */
