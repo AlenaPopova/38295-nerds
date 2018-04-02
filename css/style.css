@@ -194,7 +194,7 @@ input[type="radio"].visually-hidden {
 
 .slider-switches {
 	position: absolute;
-	left: 52.5%;
+	left: 52%;
 	bottom: 109px;
 	z-index: 1;
 
@@ -638,7 +638,7 @@ p.we-are {
 	position: absolute;
 	top: -6px;
 	left: 26%;
-	padding-right: 10px;
+	padding-right: 9px;
 }
 
 .partners-list li:nth-child(3) {
@@ -943,7 +943,7 @@ legend {
 
 .price-controls label {
 	display: inline-block;
-	width: 50%;
+	width: 49.5%;
 	vertical-align: center;
 
 	font-size: 16px;
@@ -1036,7 +1036,7 @@ legend {
 }
 
 .filter-list li:first-child {
-	padding-top: 19px;
+	padding-top: 18px;
 }
 
 /*Фильтр: Особенности*/
@@ -1228,6 +1228,8 @@ button.filter-button:active {/*задает прозрачность текст�
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
+
+	        position: relative;
 }
 
 .sorting-list li {
@@ -1237,6 +1239,27 @@ button.filter-button:active {/*задает прозрачность текст�
 .sorting-list a {
 	color: #b8b8b8;
 	padding-right: 20px;
+}
+
+.sorting-by-price {
+	content: "";
+	position: absolute;
+	top: 25%;
+	right: 54%;
+}
+
+.sorting-by-type {
+	content: "";
+	position: absolute;
+	top: 25%;
+	right: 34%;
+}
+
+.sorting-by-name {
+	content: "";
+	position: absolute;
+	top: 25%;
+	right: 5%;
 }
 
 .sorting-link a:hover,
