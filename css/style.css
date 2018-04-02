@@ -680,6 +680,7 @@ p.we-are {
 
 .map iframe {
 	position: absolute;
+	border: 0;
 	z-index: 1;
 }
 
