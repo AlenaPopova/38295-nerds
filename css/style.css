@@ -316,8 +316,8 @@ input[type="radio"].visually-hidden {
 /*Услуги*/
 .services-list {
 	list-style: none;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 80px;
 	width: 1160px;
 	display: -webkit-box;
@@ -518,10 +518,22 @@ p.we-are {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	width: 360px;
+	position: relative;
 }
 
 .container-statistic img {
 	margin: 0;
+	content: "";
+	position: absolute;
+	top: 1.5%;
+	right: 0;
+}
+
+.statictic-data {
+	content: "";
+	position: absolute;
+	top: 48%;
+	right: 0;
 }
 
 .statistic-info {
@@ -535,7 +547,7 @@ p.we-are {
 .statistic-list { 
 	width: 360px;
 	list-style: none;
-	margin:0;
+	margin: 0;
 	padding: 0;
 
 	display: -webkit-box;
@@ -1101,7 +1113,7 @@ legend {
 	display: block;
 	display: -ms-block;
 	width: 100%;
-	padding: 15px 0;
+	padding: 16px 0;
 
 	font-size: 16px;
 	font-weight: bold;
@@ -1259,7 +1271,7 @@ button.filter-button:active {/*задает прозрачность текст�
 	content: "";
 	position: absolute;
 	top: 25%;
-	right: 5%;
+	right: 4%;
 }
 
 .sorting-link a:hover,
@@ -1405,9 +1417,7 @@ button.filter-button:active {/*задает прозрачность текст�
 	margin-bottom: 60px;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 }
 
